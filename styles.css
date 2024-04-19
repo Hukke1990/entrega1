@@ -16,10 +16,12 @@ div.HospedaSphere {
   padding: 20px; /* Espaciado interno para el contenido */
   border-radius: 10px; /* Redondear los bordes */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra */
-  height: 50px; /* Alto del div */
+  height: 25px; /* Alto del div */
 }
 
 div.HospedaSphere h1 {
+  position: relative;
+  top:-18px;
   color:  rgba(191, 191, 191, 1);
   max-width: 100%; /* Ancho máximo del h1 */
   width: auto; /* Ocupar el 100% del ancho disponible */
@@ -29,7 +31,9 @@ div.HospedaSphere h1 {
   letter-spacing: 5px; /* Espacio entre letras */
 }
 
-p {
+div.HospedaSphere p {
+  position: relative;
+  top: -20px;
   color: rgba(191, 191, 191, 1);
 }
 
@@ -86,6 +90,52 @@ a:hover.menuPrincipal {
   color: rgb(18, 114, 105, 1);
   transition: 0.5s;
 }
+
+article {
+  background-color: rgba(75, 89, 87, 1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+figure {
+  height: 300px auto;
+  width: 300px auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figcaption {
+  background-color: rgba(191, 191, 191, 1);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  width: 300px;
+  text-align: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+article h2 {
+  color: rgba(191, 191, 191, 1);
+  text-align: center;
+}
+
+
 
 /* Color Theme Swatches in RGBA */
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color: rgba(18, 114, 105, 1); }
