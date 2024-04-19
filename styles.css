@@ -1,0 +1,89 @@
+body {
+  background: rgba(191, 191, 191, 1);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;  
+}
+
+.contenedor {
+  display: flex; /* Utilizar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+div.HospedaSphere {
+  background-color: rgba(15, 63, 58, 1); /* Color de fondo */
+  padding: 20px; /* Espaciado interno para el contenido */
+  border-radius: 10px; /* Redondear los bordes */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+  height: 50px; /* Alto del div */
+}
+
+div.HospedaSphere h1 {
+  color:  rgba(191, 191, 191, 1);
+  max-width: 100%; /* Ancho máximo del h1 */
+  width: auto; /* Ocupar el 100% del ancho disponible */
+  text-align: center; /* Centrar el texto */
+  line-height: 0; /* Ajustar el interlineado */
+  margin-bottom: 1%; /* Espaciado inferior */
+  letter-spacing: 5px; /* Espacio entre letras */
+}
+
+p {
+  color: rgba(191, 191, 191, 1);
+}
+
+div.imagenLogo {
+  display: flex; /* Usar flexbox para centrar */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  width: 110px; /* Ancho del logo */
+  height: 110px; /* Alto del logo */
+  background-color: rgba(15, 63, 58, 1); /* Color de fondo */
+  border-radius: 100%; /* Redondear el logo */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+
+img.logo {
+    display: block; /* Centrar el logo */
+    margin: 0 auto; /* Centrar el logo */
+}
+
+header.menuPrincipal {
+  background-color: rgb(15, 63, 58, 1);
+  padding: 0.5%;
+  margin-top: 10px;
+  width: 100%;
+  display: flex; /* Usar flexbox para centrar */
+}
+
+.menuPrincipal nav ul {
+  list-style-type: none; /* Quitar viñetas de la lista */
+  padding: 0; /* Quitar espaciado interno de la lista */
+  margin: 0; /* Quitar margen externo de la lista */
+  display: flex; /* Utilizar flexbox para el diseño */
+  width: 100%;
+}
+
+.menuPrincipal nav ul li a {  
+  margin-right: 20px; /* Margen derecho entre elementos del menú */
+  color: rgba(191, 191, 191, 1); /* Color de texto blanco */
+  text-decoration: none; /* Quitar subrayado de los enlaces */
+}
+
+.menuPrincipal nav ul li:last-child {
+  margin-right: 0; /* Quitar margen derecho del último elemento */
+}
+
+.login {
+  align-self: self-end;
+}
+
+/* Color Theme Swatches in RGBA */
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color: rgba(18, 114, 105, 1); }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-2-rgba { color: rgba(15, 63, 58, 1); }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-rgba { color: rgba(137, 165, 162, 1); }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-rgba { color: rgba(75, 89, 87, 1); }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-rgba { color: rgba(191, 191, 191, 1); }
+
