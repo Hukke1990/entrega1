@@ -50,15 +50,16 @@ img.logo {
     margin: 0 auto; /* Centrar el logo */
 }
 
-header.menuPrincipal {
+nav.menuPrincipal {
   background-color: rgb(15, 63, 58, 1);
   padding: 0.5%;
   margin-top: 10px;
-  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   display: flex; /* Usar flexbox para centrar */
 }
 
-.menuPrincipal nav ul {
+.menuPrincipal ul {
   list-style-type: none; /* Quitar viñetas de la lista */
   padding: 0; /* Quitar espaciado interno de la lista */
   margin: 0; /* Quitar margen externo de la lista */
@@ -66,18 +67,24 @@ header.menuPrincipal {
   width: 100%;
 }
 
-.menuPrincipal nav ul li a {  
+.menuPrincipal ul li a {  
   margin-right: 20px; /* Margen derecho entre elementos del menú */
+  font-weight: bold;
   color: rgba(191, 191, 191, 1); /* Color de texto blanco */
   text-decoration: none; /* Quitar subrayado de los enlaces */
 }
 
-.menuPrincipal nav ul li:last-child {
+.menuPrincipal ul li:last-child {
   margin-right: 0; /* Quitar margen derecho del último elemento */
 }
 
 .login {
   align-self: self-end;
+}
+
+a:hover.menuPrincipal {
+  color: rgb(18, 114, 105, 1);
+  transition: 0.5s;
 }
 
 /* Color Theme Swatches in RGBA */
