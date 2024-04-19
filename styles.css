@@ -5,10 +5,14 @@ body {
   line-height: 1.5;  
 }
 
+.contenedorBody {
+  background-color: blueviolet;
+  width: 60%;
+}
+
 .contenedor {
   display: flex; /* Utilizar flexbox para centrar */
   justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
 }
 
 div.HospedaSphere {
@@ -83,7 +87,7 @@ nav.menuPrincipal {
 }
 
 .login {
-  align-self: self-end;
+  justify-content: end;
 }
 
 a:hover.menuPrincipal {
