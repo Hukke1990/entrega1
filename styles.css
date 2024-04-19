@@ -10,6 +10,8 @@ body {
   width: 60%;
 }
 
+/* CSS Header */
+
 .contenedor {
   display: flex; /* Utilizar flexbox para centrar */
   justify-content: center; /* Centrar horizontalmente */
@@ -57,6 +59,9 @@ img.logo {
     display: block; /* Centrar el logo */
     margin: 0 auto; /* Centrar el logo */
 }
+
+/* CSS Menu Principal */
+
 
 nav.menuPrincipal {
   background-color: rgb(15, 63, 58, 1);
@@ -107,6 +112,19 @@ article {
   align-items: center;
   
 }
+/* CSS Imagenes */
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article h2 {
+  margin-bottom: 20px;
+  color: rgba(191, 191, 191, 1);
+  
+}
 
 figure {
   height: 300px auto;
@@ -114,7 +132,17 @@ figure {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+.imagen-contenedor {
+  margin: 10px;
+  max-width: 200px; /* Ancho máximo para cada imagen */
+  text-align: center;
+}
+
+.imagen-contenedor img {
+  max-width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  height: auto; /* Se ajusta la altura automáticamente */
 }
 
 figcaption {
