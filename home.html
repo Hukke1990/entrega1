@@ -7,34 +7,44 @@
     <title>Alojamiento</title>
   </head>
   <body>
-    <div class="contenedor">
-      <div class="imagenLogo">
-        <img
-          class="logo"
-          src="imagenes/logo.png"
-          alt=""
-          width="100"
-          height="100"
-        />
-      </div>
-    </div>
-    <div class="contenedor">
-      <div class="HospedaSphere">
-        <h1>HospedaSphere</h1>
-        <p>Descubre el mundo, encuentra tu espacio!</p>
-      </div>
-    </div>
-    <header class="menuPrincipal">
-      <nav>
+    <div class="">
+      <header>
+        <div class="contenedor">
+          <div class="imagenLogo">
+            <img
+              class="logo"
+              src="imagenes/logo.png"
+              alt=""
+              width="100"
+              height="100"
+            />
+          </div>
+        </div>
+        <div class="contenedor">
+          <div class="HospedaSphere">
+            <h1>HospedaSphere</h1>
+            <p>Descubre el mundo, encuentra tu espacio!</p>
+          </div>
+        </div>
+      </header>
+      <nav class="menuPrincipal">
         <ul>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="informacionContacto.html">Contacto</a></li>
-          <li><a href="informacionInsti.html">Informacion Institucional</a></li>
-          <li class="login"><a href="login.html">Login</a></li>
+          <li><a class="menuPrincipal" href="home.html">Home</a></li>
+          <li>
+            <a class="menuPrincipal" href="informacionContacto.html"
+              >Contacto</a
+            >
+          </li>
+          <li>
+            <a class="menuPrincipal" href="informacionInsti.html"
+              >Informacion Institucional</a
+            >
+          </li>
+          <li class="login">
+            <a class="menuPrincipal" href="login.html">Login</a>
+          </li>
         </ul>
       </nav>
-    </header>
-    <header>
       <nav>
         <ul>
           <li><a href="#">Casas</a></li>
@@ -42,31 +52,43 @@
           <li><a href="#">Hoteles</a></li>
         </ul>
       </nav>
-    </header>
-    <h2>Destacados</h2>
-    <img src="https://via.placeholder.com/300" alt="" />
-    <h3>Casa</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-      consectetur ornare sapien ac pellentesque.
-    </p>
-    <img src="https://via.placeholder.com/300" alt="" />
-    <h3>Casa</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-      consectetur ornare sapien ac pellentesque.
-    </p>
-    <img src="https://via.placeholder.com/300" alt="" />
-    <h3>Casa</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-      consectetur ornare sapien ac pellentesque.
-    </p>
-    <img src="https://via.placeholder.com/300" alt="" />
-    <h3>Casa</h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-      consectetur ornare sapien ac pellentesque.
-    </p>
+
+      <article>
+        <h2>Destacados</h2>
+        <figure class="contenedorImagenes">
+          <figure class="imagen-contenedor">
+            <img src="imagenes/01.jpeg" alt="Imagen 1" />
+            <figcaption>
+              <h3>Imagen 1</h3>
+              <p>Descripción de la imagen 1</p>
+            </figcaption>
+          </figure>
+          <figure class="imagen-contenedor">
+            <img src="imagenes/02.jpg" alt="Imagen 2" />
+            <figcaption>
+              <h3>Imagen 2</h3>
+              <p>Descripción de la imagen 2</p>
+            </figcaption>
+            </figcaption>
+          </figure>
+          <figure class="imagen-contenedor">
+            <img src="imagenes/03.jpeg" alt="Imagen 3" />
+            <figcaption>
+              <h3>Imagen 3</h3>
+              <p>Descripción de la imagen 3</p>
+            </figcaption>
+            </figcaption>
+          </figure>
+          <figure class="imagen-contenedor">
+            <img src="imagenes/04.jpeg" alt="Imagen 4" />
+            <figcaption>
+              <h3>Imagen 4</h3>
+              <p>Descripción de la imagen 4</p>
+            </figcaption>
+            </figcaption>
+          </figure>
+        </figure>
+      </article>
+    </div>
   </body>
 </html>
