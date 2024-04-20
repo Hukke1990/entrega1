@@ -1,6 +1,6 @@
 body {
   background: rgba(191, 191, 191, 1);
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   line-height: 1.5;  
 }
@@ -43,7 +43,7 @@ div.HospedaSphere {
   background-color: rgba(15, 63, 58, 1); /* Color de fondo */
   padding: 20px; /* Espaciado interno para el contenido */
   border-radius: 10px; /* Redondear los bordes */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Sombra */
   height: 25px; /* Alto del div */
 }
 
@@ -73,7 +73,7 @@ div.imagenLogo {
   height: 110px; /* Alto del logo */
   background-color: rgba(15, 63, 58, 1); /* Color de fondo */
   border-radius: 100%; /* Redondear el logo */
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Sombra */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Sombra */
 }
 
 
@@ -90,7 +90,7 @@ nav.menuPrincipal {
   padding: 0.5%;
   margin-top: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   display: flex; /* Usar flexbox para centrar */
 }
 
@@ -119,11 +119,14 @@ a:hover.menuPrincipal {
   transition: 0.5s;
 }
 
+/* CSS Imagenes y texto */
+
 article {
-  background-color: rgba(75, 89, 87, 1);
+  background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
+
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   margin-top: 10px;
   margin: 10px auto; /* Margen automático en la parte superior e inferior y centrado horizontalmente */
   max-width: 1000px; /* Ancho máximo para evitar que el artículo se extienda demasiado */
@@ -131,20 +134,14 @@ article {
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  align-items: center;  
-}
-/* CSS Imagenes y texto */
-
-article {
+  align-items: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-article h2 {
-  margin-bottom: 20px;
-  color: rgba(191, 191, 191, 1);
-  
+/*  background-image: url("imagenes/banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;  */
 }
 
 .contenedorImagenes {
@@ -180,8 +177,15 @@ figure {
 }
 
 article h2 {
+  font-size: 30px;
+  letter-spacing: 6px;
   color: rgba(191, 191, 191, 1);
   text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  background-color: rgba(18, 114, 105, 1);
+  width: 100%;
+  border-radius: 20px;
+  
 }
 
 figcaption {
@@ -201,18 +205,20 @@ figcaption {
 
 figcaption h3 {
   flex-direction: column;
-  font-size: 20px;
+  font-size: 25px;
   color: rgba(18, 114, 105, 1);
   text-align: center;
   margin-bottom: 10px;
 }
 
 figcaption p {
+  position: relative;
+  bottom: 40px;
   font-size: 14px;
   color: rgba(75, 89, 87, 1);
   text-align: justify;
   line-height: 1.5; /* Espaciado entre líneas */
-  max-height: 150px; /* Altura máxima antes de cortar */
+  max-height: 100px; /* Altura máxima antes de cortar */
   overflow: hidden; /* Quitar texto sobrante */
   word-spacing: normal; /* Espaciado de palabras */
 }
@@ -221,11 +227,50 @@ figcaption p::first-letter {
   font-size: 300%; /* Tamaño de la primera letra */
   float: left; /* Hace que la letra flote a la izquierda */
   margin-right: 5px; /* Margen derecho entre el texto y la letra */
-  font-family: 'Times New Roman', Times, serif; /* Fuente estilo diario */
   line-height: 1; /* Espaciado entre líneas */
 }
 
+figcaption a {
+  color: rgba(191, 191, 191, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(15, 63, 58, 1);
+  border-radius: 5px;
+  padding-inline: 5px;
+  text-decoration: none;
+}
 
+figcaption a:hover {
+  background-color: rgba(18, 114, 105, 1);
+  transition: 0.5s;
+}
+
+figcaption h3 {
+  position: relative;
+  top: -30px;
+}
+
+/* Footer */
+
+footer a {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+footer p {
+  background-color: rgba(18, 114, 105, 1);
+  border-radius: 10px; 
+  padding: 2px;
+}
+
+p.derechos {
+  font-size: 12px;
+  color: rgba(191, 191, 191, 1);
+
+}
 
 /* Color Theme Swatches in RGBA */
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color: rgba(18, 114, 105, 1); }
