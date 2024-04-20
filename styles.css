@@ -17,6 +17,28 @@ body {
   justify-content: center; /* Centrar horizontalmente */
 }
 
+.login a {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  color: rgba(191, 191, 191, 1);
+  background-color: rgba(15, 63, 58, 1);
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
+.imagenLogin {
+  position: relative;
+  top: 2px;
+  display: inline-flex;
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+}
+
 div.HospedaSphere {
   background-color: rgba(15, 63, 58, 1); /* Color de fondo */
   padding: 20px; /* Espaciado interno para el contenido */
@@ -91,9 +113,6 @@ nav.menuPrincipal {
   margin-right: 0; /* Quitar margen derecho del último elemento */
 }
 
-.login {
-  justify-content: end;
-}
 
 a:hover.menuPrincipal {
   color: rgb(18, 114, 105, 1);
@@ -106,13 +125,15 @@ article {
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
+  margin: 10px auto; /* Margen automático en la parte superior e inferior y centrado horizontalmente */
+  max-width: 1000px; /* Ancho máximo para evitar que el artículo se extienda demasiado */
+  width: 60%;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  align-items: center;
-  
+  align-items: center;  
 }
-/* CSS Imagenes */
+/* CSS Imagenes y texto */
 
 article {
   display: flex;
@@ -126,6 +147,16 @@ article h2 {
   
 }
 
+.contenedorImagenes {
+  perspective: 1000px;
+}
+
+.fondoContenedor {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 2px;
+}
+
 figure {
   height: 300px auto;
   width: 300px auto;
@@ -133,6 +164,7 @@ figure {
   display: flex;
   justify-content: center;
 }
+
 
 .imagen-contenedor {
   margin: 10px;
@@ -142,7 +174,14 @@ figure {
 
 .imagen-contenedor img {
   max-width: 100%; /* La imagen ocupa todo el ancho del contenedor */
-  height: auto; /* Se ajusta la altura automáticamente */
+  width: 200px;
+  height: 200px; /* Se ajusta la altura automáticamente */
+  border-radius: 10px;
+}
+
+article h2 {
+  color: rgba(191, 191, 191, 1);
+  text-align: center;
 }
 
 figcaption {
@@ -152,19 +191,38 @@ figcaption {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
   width: 300px;
-  text-align: center;
+  height: 300px;
   margin: 10px;
   flex-wrap: wrap;
-  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-y: auto;
 }
 
-article h2 {
-  color: rgba(191, 191, 191, 1);
+figcaption h3 {
+  flex-direction: column;
+  font-size: 20px;
+  color: rgba(18, 114, 105, 1);
   text-align: center;
+  margin-bottom: 10px;
+}
+
+figcaption p {
+  font-size: 14px;
+  color: rgba(75, 89, 87, 1);
+  text-align: justify;
+  line-height: 1.5; /* Espaciado entre líneas */
+  max-height: 150px; /* Altura máxima antes de cortar */
+  overflow: hidden; /* Quitar texto sobrante */
+  word-spacing: normal; /* Espaciado de palabras */
+}
+
+figcaption p::first-letter {
+  font-size: 300%; /* Tamaño de la primera letra */
+  float: left; /* Hace que la letra flote a la izquierda */
+  margin-right: 5px; /* Margen derecho entre el texto y la letra */
+  font-family: 'Times New Roman', Times, serif; /* Fuente estilo diario */
+  line-height: 1; /* Espaciado entre líneas */
 }
 
 
