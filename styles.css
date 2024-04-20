@@ -92,6 +92,9 @@ nav.menuPrincipal {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   display: flex; /* Usar flexbox para centrar */
+  /*width: 60%;
+  max-width: 1000px;
+  margin: 10px auto; */
 }
 
 .menuPrincipal ul {
@@ -230,6 +233,7 @@ figcaption p::first-letter {
   line-height: 1; /* Espaciado entre líneas */
 }
 
+
 figcaption a {
   color: rgba(191, 191, 191, 1);
   display: flex;
@@ -251,12 +255,38 @@ figcaption a:hover {
 figcaption h3 {
   position: relative;
   top: -30px;
+  font-style: italic;
+  text-transform: capitalize;
 }
 
 /* Footer */
 
-footer a {
-  display: flex;
+footer a img {
+  width: 20px;
+  height: 20px;
+}
+
+footer a.Facebook {
+  position: relative;
+  top: 45.9px;
+  right: 40px;
+  display: flex;  
+  justify-content: flex-end; 
+}
+
+footer a.Instagram {
+  position: relative;
+  top: 26px;
+  right: 74px;
+  display: flex;  
+  justify-content: flex-end; 
+}
+
+footer a.Twitter {
+  position: relative;
+  top: 6px;
+  right: 110px;
+  display: flex;  
   justify-content: flex-end; 
 }
 
