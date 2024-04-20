@@ -2,12 +2,10 @@ body {
   background: rgba(191, 191, 191, 1);
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
-  line-height: 1.5;  
-}
-
-.contenedorBody {
-  background-color: blueviolet;
-  width: 60%;
+  line-height: 1.5;
+  /* background-image: url("imagenes/banner1.png");
+  background-position: center;
+  background-size: cover; */
 }
 
 /* CSS Header */
