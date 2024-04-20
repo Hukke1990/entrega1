@@ -255,6 +255,8 @@ figcaption a:hover {
 figcaption h3 {
   position: relative;
   top: -30px;
+  font-style: italic;
+  text-transform: capitalize;
 }
 
 /* Footer */
