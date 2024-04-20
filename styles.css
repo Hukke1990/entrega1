@@ -179,6 +179,11 @@ figure {
   border-radius: 10px;
 }
 
+article h2 {
+  color: rgba(191, 191, 191, 1);
+  text-align: center;
+}
+
 figcaption {
   background-color: rgba(191, 191, 191, 1);
   padding: 10px;
@@ -192,12 +197,6 @@ figcaption {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-}
-
-article h2 {
-  color: rgba(191, 191, 191, 1);
-  text-align: center;
 }
 
 figcaption h3 {
@@ -211,16 +210,21 @@ figcaption h3 {
 figcaption p {
   font-size: 14px;
   color: rgba(75, 89, 87, 1);
-  text-align: center;
-  text-overflow: ellipsis; /* Quitar texto sobrante */
-  white-space: nowrap; /* Quitar salto de línea */
+  text-align: justify;
+  line-height: 1.5; /* Espaciado entre líneas */
+  max-height: 150px; /* Altura máxima antes de cortar */
   overflow: hidden; /* Quitar texto sobrante */
+  word-spacing: normal; /* Espaciado de palabras */
 }
 
-figcaption p::after { /* Pseudoelemento */
-  content: "...";
-  display: inline-block;
+figcaption p::first-letter {
+  font-size: 300%; /* Tamaño de la primera letra */
+  float: left; /* Hace que la letra flote a la izquierda */
+  margin-right: 5px; /* Margen derecho entre el texto y la letra */
+  font-family: 'Times New Roman', Times, serif; /* Fuente estilo diario */
+  line-height: 1; /* Espaciado entre líneas */
 }
+
 
 
 /* Color Theme Swatches in RGBA */
