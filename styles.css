@@ -314,8 +314,11 @@ article h3.contacto {
   font-size: 25px;
   margin: -3px;
 }
-article p.contacto {
+article p.intro {
+  margin: 0.5px;
+  margin-bottom: 5px;
   color: rgba(191, 191, 191, 1);
+  
 }
 
 article label.contacto {
@@ -345,6 +348,8 @@ article label.contacto {
   border: none;
   border-radius: 5px;
 }
+
+/* PAGINA DE INFORMACIÓN LINKEDINUCIONAL */
 
 
 /* Color Theme Swatches in RGBA */
