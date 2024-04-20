@@ -47,6 +47,34 @@
     </nav>
     <article>
       <h2>Contacto</h2>
+      <div class="contacto">
+        <h3 class="contacto">Informacion de contacto</h3>
+        <p class="contacto">
+          Pongase en contacto con nosotros, para recibir las ultimas noticias
+          <br />
+          recuerde que nuestro horario de atencion es de Lun a Vie de 9 a 18 hs.
+        </p>
+        <label class="contacto" for="nombre">Nombre Completo:</label>
+        <input type="text" name="usuario" id="usuario" />
+        <label class="contacto" for="email">Correo Electrónico:</label>
+        <input type="email" name="email" id="email" />
+        <label class="contacto" for="telefono">Teléfono:</label>
+        <input type="tel" name="tel" id="telefono" />
+        <label class="contacto" for="consulta">Consulta:</label>
+        <textarea id="consulta" name="consulta" rows="5" required></textarea>
+        <label class="contacto" for="preferencia"
+          >Preferencia de Contacto:</label
+        >
+        <select class="preferencia" name="preferencia">
+          <option value="email">Correo Electrónico</option>
+          <option value="telefono">Teléfono</option>
+        </select>
+        <label class="contacto" for="privacidad">
+          <input type="checkbox" id="privacidad" name="privacidad" required />
+          Acepto los términos de privacidad.
+        </label>
+        <button class="botonEnviar" type="submit">Enviar Consulta</button>
+      </div>
     </article>
     <footer>
       <a href="#" class="Facebook"

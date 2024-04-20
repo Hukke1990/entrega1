@@ -300,8 +300,55 @@ p.derechos {
 
 }
 
+/* PAGINA DE CONTACTO */
+
+article div.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article h3.contacto {
+  color: rgba(191, 191, 191, 1);
+  font-size: 25px;
+  margin: -3px;
+}
+article p.contacto {
+  color: rgba(191, 191, 191, 1);
+}
+
+article label.contacto {
+  color: rgba(191, 191, 191, 1);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.botonEnviar {
+  background-color: rgba(15, 63, 58, 1);
+  color: rgba(191, 191, 191, 1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botonEnviar:hover {
+  background-color: rgb(75, 89, 87, 1);
+  transition: 0.5s;
+}
+
+.preferencia {
+  background-color: rgba(15, 63, 58, 1);
+  color: rgba(191, 191, 191, 1);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+
 /* Color Theme Swatches in RGBA */
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color: rgba(18, 114, 105, 1); }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color:   rgba(18, 114, 105, 1); }
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-2-rgba { color: rgba(15, 63, 58, 1); }
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-rgba { color: rgba(137, 165, 162, 1); }
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-rgba { color: rgba(75, 89, 87, 1); }
