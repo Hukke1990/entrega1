@@ -442,43 +442,23 @@ article ul.institucional {
   margin-bottom: 10px;
 }
 
+/* MENU LOGIN */
 
- /*
-.equipoContenedor {
+.todo { /* mover al lugar correcto */
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+}
+
+aside.registro {
+  position: fixed;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 140px;
+  max-width: 200px;  
+  background-color: rgba(15, 63, 58, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  margin: 2px;
-
 }
-
-.equipoMiembro {
-  text-align: center;
-  margin: 10px;
-}
-
-.equipoMiembro img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.equipoMiembro h5 {
-  font-size: 18px;
-  margin-bottom: 5px;
-  text-transform: capitalize;
-  color: rgba(191, 191, 191, 1);
-}
-
-.equipoMiembro p {
-  font-size: 14px;
-  color: rgba(191, 191, 191, 1);
-}
-*/
-
 
 /* Color Theme Swatches in RGBA */
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color:   rgba(18, 114, 105, 1); }
