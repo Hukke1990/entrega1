@@ -9,11 +9,6 @@
   </head>
   <body>
       <header>
-        <div class="login">
-          <a class="menuPrincipal" href="login.html"
-            >Login<img class="imagenLogin" src="imagenes/login.png" alt="" />
-          </a>
-        </div>
         <div class="contenedor">
           <div class="imagenLogo">
             <img
@@ -48,13 +43,24 @@
         </ul>
       </nav>
       <div class="todo">
-        <aside class="registro">
-          <label for="usuario">usuario:</label>
-          <input type="text" name="usuario" id="usuario">
-          <label for="password">contraseña:</label>
-          <input type="password" name="password" id="">
+        <aside class="izquierda">
+          <div class="usuarioLogin">
+            <label for="usuario">usuario:</label>
+            <input type="text" name="usuario" id="usuario">
+          </div>
+          <div class="contraseñaLogin">
+            <label for="password">contraseña:</label>
+            <input type="password" name="password" id="">
+          </div>
           <a href="#">conectarse</a>
           <a href="#">registrarse</a>
+        </aside>
+        <aside class="derecha">
+          <div class="login">
+            <a class="menuPrincipal" href="login.html"
+              >Login<img class="imagenLogin" src="imagenes/login.png" alt="" />
+            </a>
+          </div>
         </aside>
         <article>
           <h2>Destacados</h2>

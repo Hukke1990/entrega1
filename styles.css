@@ -15,28 +15,6 @@ body {
   justify-content: center; /* Centrar horizontalmente */
 }
 
-.login a {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  color: rgba(191, 191, 191, 1);
-  background-color: rgba(15, 63, 58, 1);
-  border-radius: 10px;
-  padding: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
-
-.imagenLogin {
-  position: relative;
-  top: 2px;
-  display: inline-flex;
-  margin-left: 5px;
-  height: 20px;
-  width: 20px;
-}
-
 div.HospedaSphere {
   background-color: rgba(15, 63, 58, 1); /* Color de fondo */
   padding: 20px; /* Espaciado interno para el contenido */
@@ -448,9 +426,42 @@ article ul.institucional {
   display: flex;
 }
 
-aside.registro {
+aside.izquierda {
   position: fixed;
   flex-direction: column;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: auto; 
+  background-color: rgba(15, 63, 58, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.usuarioLogin {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.usuarioLogin label {
+  margin-right: 10px; /* Espacio entre el label y el input */
+}
+
+.contraseñaLogin {  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contraseñaLogin label {
+  margin-right: 10px; /* Espacio entre el label y el input */
+}
+
+/* MENU FILTRO */
+
+.derecha {
+  position: fixed;
+  right: 10px;
   margin-top: 10px;
   margin-left: 10px;
   height: 140px;
@@ -458,7 +469,25 @@ aside.registro {
   background-color: rgba(15, 63, 58, 1);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+
 }
+
+.login a {
+  color: rgba(191, 191, 191, 1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.imagenLogin {
+  position: relative;
+  top: 2px;
+  display: inline-flex;
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+}
+
+
 
 /* Color Theme Swatches in RGBA */
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color:   rgba(18, 114, 105, 1); }
