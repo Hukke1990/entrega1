@@ -359,7 +359,7 @@ article a.institucional {
   font-weight: bold;
 }
 
-article a:hover {
+article a:hover.institucional {
   text-decoration: underline;
 }
 
