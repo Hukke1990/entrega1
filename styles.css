@@ -94,7 +94,7 @@ nav.menuPrincipal {
 
 
 a:hover.menuPrincipal {
-  color: rgb(18, 114, 105, 1);
+  color: rgb(255, 152, 18);
   transition: 0.5s;
 }
 
@@ -427,36 +427,70 @@ article ul.institucional {
 }
 
 aside.izquierda {
-  position: fixed;
   flex-direction: column;
   margin-top: 10px;
-  margin-left: 10px;
   width: auto; 
-  background-color: rgba(15, 63, 58, 1);
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  padding: 6px;
 }
 
 .usuarioLogin {  
+  background-color: rgba(18, 114, 105, 1);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+  padding: 4px;
 }
 
 .usuarioLogin label {
-  margin-right: 10px; /* Espacio entre el label y el input */
+  color: rgba(191, 191, 191, 1);
+  font-weight: bold;
+  margin-right: 30px; /* Espacio entre el label y el input */
 }
 
-.contraseñaLogin {  
+.contraseñaLogin {
+  background-color: rgba(18, 114, 105, 1);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0px;
+  padding: 4px;
 }
 
 .contraseñaLogin label {
+  color: rgba(191, 191, 191, 1);
+  font-weight: bold;
   margin-right: 10px; /* Espacio entre el label y el input */
 }
 
+.izquierda a {
+  padding-left: 35px;
+  color: rgba(191, 191, 191, 1);
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.izquierda a:hover {
+  text-decoration: underline;
+  color: rgb(255, 152, 18);
+  transition: 0.5s;
+}
+
+.izquierda input {
+  border-radius: 10px;
+  border: none;  
+}
 /* MENU FILTRO */
 
 .derecha {
