@@ -2,12 +2,10 @@ body {
   background: rgba(191, 191, 191, 1);
   font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
-  line-height: 1.5;  
-}
-
-.contenedorBody {
-  background-color: blueviolet;
-  width: 60%;
+  line-height: 1.5;
+  /* background-image: url("imagenes/banner1.png");
+  background-position: center;
+  background-size: cover; */
 }
 
 /* CSS Header */
@@ -126,7 +124,6 @@ a:hover.menuPrincipal {
 
 article {
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
-
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
@@ -302,8 +299,182 @@ p.derechos {
 
 }
 
+/* PAGINA DE CONTACTO */
+
+article div.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+article h3.contacto {
+  color: rgba(191, 191, 191, 1);
+  font-size: 25px;
+  margin: -3px;
+}
+article p.intro {
+  margin: 0.5px;
+  margin-bottom: 5px;
+  color: rgba(191, 191, 191, 1);
+  
+}
+
+article label.contacto {
+  color: rgba(191, 191, 191, 1);
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.botonEnviar {
+  background-color: rgba(15, 63, 58, 1);
+  color: rgba(191, 191, 191, 1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botonEnviar:hover {
+  background-color: rgb(75, 89, 87, 1);
+  transition: 0.5s;
+}
+
+.preferencia {
+  background-color: rgba(15, 63, 58, 1);
+  color: rgba(191, 191, 191, 1);
+  padding: 5px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* PAGINA DE INFORMACIÓN LINKEDINUCIONAL */
+
+article.institucional {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(75, 89, 87, 1);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  max-width: 1500px;
+}
+
+article a.institucional {
+  color: rgb(255, 152, 18);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+
+article h4.institucional {
+  color: rgba(191, 191, 191, 1);
+  font-size: 20px;
+  margin-bottom: 5px;
+  background-color: rgba(18, 114, 105, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding-inline: 10px;
+}
+
+article p.institucional {
+  color: rgba(191, 191, 191, 1);
+  margin-bottom: 5px;
+}
+
+article li.institucional {
+  color: rgba(191, 191, 191, 1);
+  margin-bottom: 5px;
+}
+article ul.institucional {
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: rgba(191, 191, 191, 1);
+}
+
+
+/* equiipo de trabajo */
+
+.equipoContenedor {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  margin: 10px auto;
+}
+
+.equipoMiembro {
+  text-align: center;
+}
+
+.equipoMiembro img {
+  background-color: rgba(18, 114, 105, 1);
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.miembroInfo {  
+  color: rgba(191, 191, 191, 1);
+  text-align: left; /* Alinea el texto a la izquierda */
+  text-transform: capitalize;
+}
+
+.miembroInfo ul {
+  margin-left: -40px;
+  margin-bottom: 10px;
+}
+
+
+ /*
+.equipoContenedor {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 2px;
+
+}
+
+.equipoMiembro {
+  text-align: center;
+  margin: 10px;
+}
+
+.equipoMiembro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.equipoMiembro h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color: rgba(191, 191, 191, 1);
+}
+
+.equipoMiembro p {
+  font-size: 14px;
+  color: rgba(191, 191, 191, 1);
+}
+*/
+
+
 /* Color Theme Swatches in RGBA */
-.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color: rgba(18, 114, 105, 1); }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color:   rgba(18, 114, 105, 1); }
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-2-rgba { color: rgba(15, 63, 58, 1); }
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-rgba { color: rgba(137, 165, 162, 1); }
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-rgba { color: rgba(75, 89, 87, 1); }
