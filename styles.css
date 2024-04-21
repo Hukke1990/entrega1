@@ -124,7 +124,6 @@ a:hover.menuPrincipal {
 
 article {
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
-
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
@@ -402,17 +401,18 @@ article ul.institucional {
 /* equiipo de trabajo */
 
 .equipoContenedor {
-  display: inline;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 20px;
-  width: auto;
-  height: auto;
-  max-width: 200px; 
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  margin: 10px auto;
 }
 
 .equipoMiembro {
   text-align: center;
-  margin: 10px auto;
 }
 
 .equipoMiembro img {
@@ -424,13 +424,17 @@ article ul.institucional {
   margin-bottom: 10px;
 }
 
-.miembroInfo {
-  
-  position: relative;
+.miembroInfo {  
   color: rgba(191, 191, 191, 1);
-  text-align: center;
+  text-align: left; /* Alinea el texto a la izquierda */
   text-transform: capitalize;
 }
+
+.miembroInfo ul {
+  margin-left: -40px;
+  margin-bottom: 10px;
+}
+
 
  /*
 .equipoContenedor {
