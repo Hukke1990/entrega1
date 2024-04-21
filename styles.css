@@ -15,28 +15,6 @@ body {
   justify-content: center; /* Centrar horizontalmente */
 }
 
-.login a {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  color: rgba(191, 191, 191, 1);
-  background-color: rgba(15, 63, 58, 1);
-  border-radius: 10px;
-  padding: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
-
-.imagenLogin {
-  position: relative;
-  top: 2px;
-  display: inline-flex;
-  margin-left: 5px;
-  height: 20px;
-  width: 20px;
-}
-
 div.HospedaSphere {
   background-color: rgba(15, 63, 58, 1); /* Color de fondo */
   padding: 20px; /* Espaciado interno para el contenido */
@@ -116,7 +94,7 @@ nav.menuPrincipal {
 
 
 a:hover.menuPrincipal {
-  color: rgb(18, 114, 105, 1);
+  color: rgb(255, 152, 18);
   transition: 0.5s;
 }
 
@@ -442,42 +420,107 @@ article ul.institucional {
   margin-bottom: 10px;
 }
 
+/* MENU LOGIN */
 
- /*
-.equipoContenedor {
+.todo { /* mover al lugar correcto */
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+}
+
+aside.izquierda {
+  flex-direction: column;
+  margin-top: 10px;
+  width: auto; 
+  height: 100px;
+  background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  margin: 2px;
-
+  padding: 6px;
 }
 
-.equipoMiembro {
-  text-align: center;
-  margin: 10px;
-}
+.usuarioLogin {  
+  background-color: rgba(18, 114, 105, 1);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 
-.equipoMiembro img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
+  padding: 4px;
 }
 
-.equipoMiembro h5 {
-  font-size: 18px;
-  margin-bottom: 5px;
-  text-transform: capitalize;
+.usuarioLogin label {
   color: rgba(191, 191, 191, 1);
+  font-weight: bold;
+  margin-right: 30px; /* Espacio entre el label y el input */
 }
 
-.equipoMiembro p {
-  font-size: 14px;
-  color: rgba(191, 191, 191, 1);
+.contraseñaLogin {
+  background-color: rgba(18, 114, 105, 1);
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  padding: 4px;
 }
-*/
+
+.contraseñaLogin label {
+  color: rgba(191, 191, 191, 1);
+  font-weight: bold;
+  margin-right: 10px; /* Espacio entre el label y el input */
+}
+
+.izquierda a {
+  padding-left: 35px;
+  color: rgba(191, 191, 191, 1);
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.izquierda a:hover {
+  text-decoration: underline;
+  color: rgb(255, 152, 18);
+  transition: 0.5s;
+}
+
+.izquierda input {
+  border-radius: 10px;
+  border: none;  
+}
+/* MENU FILTRO */
+
+.derecha {
+  position: fixed;
+  right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  height: 140px;
+  max-width: 200px;  
+  background-color: rgba(15, 63, 58, 1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+
+}
+
+.login a {
+  color: rgba(191, 191, 191, 1);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.imagenLogin {
+  position: relative;
+  top: 2px;
+  display: inline-flex;
+  margin-left: 5px;
+  height: 20px;
+  width: 20px;
+}
+
 
 
 /* Color Theme Swatches in RGBA */
