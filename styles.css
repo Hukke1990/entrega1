@@ -424,6 +424,9 @@ article ul.institucional {
 
 .todo { /* mover al lugar correcto */
   display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: rgba(75, 89, 87, 1);
 }
 
 .contenedorLogin {
@@ -541,50 +544,16 @@ article ul.institucional {
 .contenedorInfo a.edicionUsuario:hover {
   color: rgb(255, 152, 18); 
 }
-
-
-
-/* MENU FILTRO */
- /*
-.derecha {
-  position: fixed;
-  right: 10px;
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 140px;
-  width: 100px;
-  max-width: 200px;  
-  background-color: rgba(15, 63, 58, 1);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-
-}
-
-.login a {
-  color: rgba(191, 191, 191, 1);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.imagenLogin {
-  position: relative;
-  top: 2px;
-  display: inline-flex;
-  margin-left: 5px;
-  height: 20px;
-  width: 20px;
-}
-*/
+ 
 /* FILTRO ALOJAMIENTOS */
 
 .filtroAlojamientos {
   display: flex;
+  flex-direction: column;
   right: 10px;
   margin-top: 10px;
   margin-left: 10px;
   height: 140px;
-  width: 100px;
-  max-width: 200px;  
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
