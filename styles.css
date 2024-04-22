@@ -626,12 +626,13 @@ article ul.institucional {
   margin: -5px 10px;
   width: 20px;
   height: 20px;
+  transition: 0.5s;
 }
 
-.filtroAlojamientos img {
-  margin: -5px 10px;
-  width: 20px;
-  height: 20px;}
+/* Mostrar la imagen al pasar el mouse sobre el enlace */
+.filtroAlojamientos a:hover img {
+  filter: brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(30deg); /* Cambiar el filtro de la imagen */
+}
 
 
 
