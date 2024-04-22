@@ -8,6 +8,10 @@ body {
   background-size: cover; */
 }
 
+main {
+  display: flex;
+}
+
 /* CSS Header */
 
 .contenedor {
@@ -425,9 +429,7 @@ article ul.institucional {
 .todo { /* mover al lugar correcto */
   display: flex;
   flex-direction: column;
-  max-width: 300px;
-  background-color: rgba(75, 89, 87, 1);
-}
+  max-width: 300px;}
 
 .contenedorLogin {
   display: block;
