@@ -611,7 +611,15 @@ article ul.institucional {
   color: rgba(191, 191, 191, 1);
   font-weight: bold;
   margin-right: 10px;
+  text-decoration: none;  
 }
+
+.filtroAlojamientos a:hover {
+  color: rgb(255, 152, 18);
+  transition: 0.5s;
+}
+
+
 
 /* Color Theme Swatches in RGBA */
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-1-rgba { color:   rgba(18, 114, 105, 1); }
@@ -619,4 +627,6 @@ article ul.institucional {
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-3-rgba { color: rgba(137, 165, 162, 1); }
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-4-rgba { color: rgba(75, 89, 87, 1); }
 .N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-rgba { color: rgba(191, 191, 191, 1); }
+.N-I-S-H-I-K-I-G-O---Furniture-Design-Award-2014-5-rgba {color: rgb(241, 241, 241), rgb(235, 66, 15)}
 
+/* SACAR UNDERLINE */
