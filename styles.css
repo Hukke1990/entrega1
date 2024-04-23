@@ -114,13 +114,12 @@ article.medio{
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  margin-top: 10px;
-  margin: 10px auto; 
+  margin: 10px 8%; /* REVISAR */
   max-width: 1000px;
-  width: 60%;
+  width: 100%;
   height: auto;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;    
 }
 
 .contenedorImagenes {
