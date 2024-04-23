@@ -65,7 +65,7 @@ img.logo {
 /* CSS Menu Principal  */
 
 
-nav.menuPrincipal {
+section.menuPrincipal {
   background-color: rgb(15, 63, 58, 1);
   padding: 0.5%;
   margin-top: 10px;
@@ -453,6 +453,7 @@ article ul.institucional {
 }
 
 .tarjeta .atras h3 {
+  white-space: nowrap;
   font-size: 30px;
   margin-top: 20px;
   letter-spacing: 2px;
