@@ -622,16 +622,15 @@ article ul.institucional {
 }
 
 .filtroAlojamientos img {
-  filter: brightness(1) invert(1); /* Desatura la imagen y la convierte en blanco */
+  filter: brightness(1) invert(1);
   margin: -5px 10px;
   width: 20px;
   height: 20px;
   transition: 0.5s;
 }
 
-/* Mostrar la imagen al pasar el mouse sobre el enlace */
 .filtroAlojamientos a:hover img {
-  filter: brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(30deg); /* Cambiar el filtro de la imagen */
+  filter: brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(30deg); 
 }
 
 
