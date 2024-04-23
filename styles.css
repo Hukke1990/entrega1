@@ -109,12 +109,12 @@ section.menuPrincipal {
 
 /* CSS Imagenes y texto */
 
-article.medio{
+section.medio {
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  margin: 10px 8%; /* REVISAR */
+  margin: 10px auto; /* Centro horizontalmente */
   max-width: 1000px;
   width: 100%;
   height: auto;
@@ -279,19 +279,20 @@ p.derechos {
 
 /* PAGINA DE CONTACTO */
 
-article div.contacto {
+section .contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
 }
 
-article h3.contacto {
+section h3.contacto {
   color: rgba(191, 191, 191, 1);
   font-size: 25px;
   margin: -3px;
 }
-article p.intro {
+section p.intro {
   margin: 0.5px;
   margin-bottom: 5px;
   color: rgba(191, 191, 191, 1);
