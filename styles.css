@@ -197,6 +197,10 @@ figcaption h3 {
   color: rgba(18, 114, 105, 1);
   text-align: center;
   margin-bottom: 10px;
+  position: relative;
+  top: -30px;
+  font-style: italic;
+  text-transform: capitalize;
 }
 
 figcaption p {
@@ -220,26 +224,21 @@ figcaption p::first-letter {
 
 
 figcaption a {
-  display: block;
+  position: relative;
+  bottom: 30px;
   color: rgba(191, 191, 191, 1);
   font-size: 16px;
   background-color: rgba(15, 63, 58, 1);
   border-radius: 5px;
   padding-inline: 5px;
   text-decoration: none;
-}
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 
+}
 
 figcaption a:hover {
   background-color: rgba(18, 114, 105, 1);
   transition: 0.5s;
-}
-
-figcaption h3 {
-  position: relative;
-  top: -30px;
-  font-style: italic;
-  text-transform: capitalize;
 }
 
 /* Footer */
