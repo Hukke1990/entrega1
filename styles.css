@@ -1,6 +1,6 @@
 body {
   background: rgba(191, 191, 191, 1);
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', Times, serif;
   font-size: 16px;
   line-height: 1.5;
   /* background-image: url("imagenes/banner1.png");
@@ -65,7 +65,7 @@ img.logo {
 /* CSS Menu Principal  */
 
 
-section.menuPrincipal {
+nav.menuPrincipal {
   background-color: rgb(15, 63, 58, 1);
   padding: 0.5%;
   margin-top: 10px;
@@ -103,23 +103,32 @@ section.menuPrincipal {
 }
 
 .menuPrincipal ul li a:active {
+  background-color: black;
   color: rgb(255, 152, 18);
 }
 
 
 /* CSS Imagenes y texto */
 
-section.medio {
+article.medio {
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  margin: 10px 18%; /* Centro horizontalmente */
+  margin-top: 10px;
+  margin: 10px 8%; 
   max-width: 1000px;
-  width: 100%;
-  height: auto;
+  width: 60%;
+  align-self: flex-start;
+}
+
+article.contacto {
+  background-color: rgb(15, 63, 58, 1);
+  padding: 0.5%;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   display: flex;
-  flex-direction: column;    
 }
 
 .contenedorImagenes {
@@ -173,12 +182,12 @@ figcaption {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
   width: 300px;
-  height: 300px;
-  margin: 10px;
+  height: 300px; 
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  align-items: center;
+  
+ 
 }
 
 figcaption h3 {
@@ -210,17 +219,15 @@ figcaption p::first-letter {
 
 
 figcaption a {
+  display: block;
   color: rgba(191, 191, 191, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 16px;
-  font-weight: bold;
   background-color: rgba(15, 63, 58, 1);
   border-radius: 5px;
   padding-inline: 5px;
   text-decoration: none;
 }
+
 
 figcaption a:hover {
   background-color: rgba(18, 114, 105, 1);
@@ -279,20 +286,19 @@ p.derechos {
 
 /* PAGINA DE CONTACTO */
 
-section .contacto {
+article div.contacto {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
-section h3.contacto {
+article h3.contacto {
   color: rgba(191, 191, 191, 1);
   font-size: 25px;
   margin: -3px;
 }
-section p.intro {
+article p.intro {
   margin: 0.5px;
   margin-bottom: 5px;
   color: rgba(191, 191, 191, 1);
@@ -327,9 +333,7 @@ article label.contacto {
   border-radius: 5px;
 }
 
-
-
-/* PAGINA DE INFORMACIÓN LINKEDINUCIONAL */
+/* PAGINA DE INFORMACIÓN INSTI */
 
 article.institucional {
   background-color: rgba(75, 89, 87, 1);
@@ -346,17 +350,19 @@ article a:hover.institucional {
 }
 
 article h4.institucional {
+  display: flex;
+  justify-content: center;
   color: rgba(191, 191, 191, 1);
   font-size: 20px;
   margin-bottom: 5px;
   background-color: rgba(18, 114, 105, 1);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
-  padding-inline: 50px;
-  align-self: center;
+  padding-inline: 10px;
 }
 
 article p.institucional {
+  text-align: center;
   color: rgba(191, 191, 191, 1);
   margin-bottom: 5px;
 }
@@ -378,6 +384,7 @@ article ul.institucional {
   display: flex;
   flex-wrap: wrap;
   margin: 10px auto;
+  justify-content: center;
 }
   
 
@@ -393,7 +400,39 @@ article ul.institucional {
   margin: 10px;
 }
 
-/* PAGINA DE INFORMACION ESTILO TARJETAS */
+.equipoMiembro {
+  text-align: center;
+}
+
+.equipoMiembro img {
+  background-color: rgba(18, 114, 105, 1);
+  padding: 5px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.miembroInfo {  
+  color: rgba(191, 191, 191, 1);
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.miembroInfo h5 {
+  font-size: 20px;
+}
+
+.miembroInfo ul strong {
+  color: rgba(18, 114, 105, 1);
+}
+
+.miembroInfo ul {
+  margin-left: -40px;
+  margin-bottom: 10px;
+}
+
+/* TARJETAS GIRATORIAS */
 
 .tarjeta {
   position: relative;
@@ -479,6 +518,8 @@ article ul.institucional {
   transform: perspective(600px) rotateY(360deg);
 }
 
+
+
 /* MENU LOGIN */
 
 .todo { /* mover al lugar correcto */
@@ -526,7 +567,6 @@ article ul.institucional {
   margin-bottom: 0px;
   padding: 4px;
 }
-
 .contraseñaLogin label {
   color: rgba(191, 191, 191, 1);
 }
@@ -544,6 +584,7 @@ article ul.institucional {
 }
 
 .izquierda a.login {
+  margin-top: 5px;
   color: rgba(191, 191, 191, 1);
   text-decoration: none;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
@@ -577,6 +618,7 @@ article ul.institucional {
   padding: 6px;
 }
 
+
 .avatar {
   background-color: rgb(255, 152, 18);
   padding: 5px;
@@ -598,10 +640,6 @@ article ul.institucional {
   margin-top: -20px;
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
 
-}
-
-.contenedorInfo h3 {
-  color: rgba(191, 191, 191, 1);
 }
 
 .contenedorInfo a.edicionUsuario {
@@ -632,6 +670,7 @@ article ul.institucional {
 .filtroAlojamientos h2 {
   background-color: rgba(18, 114, 105, 1);
   border-radius: 20px;
+  padding-inline: 10px;
   width: 200px;
   margin: 10px auto;
   text-align: center;
@@ -663,9 +702,11 @@ article ul.institucional {
 }
 
 .filtroAlojamientos a:hover img {
-  filter: brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(30deg);
+  filter: brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(30deg); /* REVISAR */
   transition: 0.5s; 
 }
+
+
 
 
 
