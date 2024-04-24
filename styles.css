@@ -132,6 +132,7 @@ article.contacto {
 }
 
 .contenedorImagenes {
+  display: flex;
   perspective: 1000px;
 }
 
