@@ -88,15 +88,22 @@ nav.menuPrincipal {
 .menuPrincipal ul li a {
   display: block;  
   margin-right: 20px;
-  font-weight: bold;
   color: rgba(191, 191, 191, 1);
   text-decoration: none;
 }
-
+ /*
 .menuPrincipal .login {
   position: absolute;
   right: 0;
   margin-right: 20px;
+}
+*/
+.menuPrincipal .login:hover {
+  background-color: rgb(255, 152, 18);
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
 }
 
 .menuPrincipal ul li:last-child {
@@ -113,6 +120,48 @@ nav.menuPrincipal {
   color: rgb(255, 152, 18);
 }
 
+.menuPrincipal .loginNav:hover {
+  background-color: rgb(255, 152, 18);
+  border-radius: 10px;
+  padding: 5px;
+  transition: 0.5s;
+  color: rgb(0, 0, 0);
+}
+
+.loginNav {
+  color: rgba(191, 191, 191, 1);
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.contenedorLoginNav {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+.contenedorLoginNav-contenido {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: rgb(255, 152, 18);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.contenedorLoginNav-contenido a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.contenedorLoginNav:hover .contenedorLoginNav-contenido {
+  display: block;
+}
 /* CSS Imagenes y texto */
 
 article.medio {
