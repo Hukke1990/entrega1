@@ -85,11 +85,18 @@ nav.menuPrincipal {
   width: 100%;
 }
 
-.menuPrincipal ul li a {  
+.menuPrincipal ul li a {
+  display: block;  
   margin-right: 20px;
   font-weight: bold;
   color: rgba(191, 191, 191, 1);
   text-decoration: none;
+}
+
+.menuPrincipal .login {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
 
 .menuPrincipal ul li:last-child {
@@ -105,7 +112,6 @@ nav.menuPrincipal {
 .menuPrincipal ul li a:active {
   color: rgb(255, 152, 18);
 }
-
 
 /* CSS Imagenes y texto */
 
