@@ -334,6 +334,16 @@ article label.contacto {
   border-radius: 5px;
 }
 
+.contacto input {
+  border-radius: 10px;
+  border: none;
+}
+
+.contacto textarea {
+  border-radius: 10px;
+  border: none;
+}
+
 /* PAGINA DE INFORMACIÓN INSTI */
 
 article.institucional {
