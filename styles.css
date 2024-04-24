@@ -103,7 +103,6 @@ nav.menuPrincipal {
 }
 
 .menuPrincipal ul li a:active {
-  background-color: black;
   color: rgb(255, 152, 18);
 }
 
