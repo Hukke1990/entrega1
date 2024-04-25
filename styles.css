@@ -12,7 +12,22 @@ main {
   display: flex;
 }
 
+.todo { /* mover al lugar correcto */
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 300px;
+}
+
 /* CSS Header */
+
+header {
+  background: rgba(191, 191, 191, 1);
+  position: fixed; /* Posicionar el encabezado en la parte superior */
+  width: 100%;
+  top: 0px; /* Ancho del encabezado */
+  z-index: 1; /* Colocar el encabezado por encima de otros elementos */
+}
 
 .contenedor {
   display: flex; /* Utilizar flexbox para centrar */
@@ -188,12 +203,13 @@ nav.menuPrincipal {
 /* CSS Imagenes y texto */
 
 article.medio {
+  position: relative;
+  top: 220px;
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  margin-top: 10px;
-  margin: 10px 8%; 
+  margin: 10px 8% 100px; 
   max-width: 1000px;
   width: 60%;
   align-self: flex-start;
@@ -257,7 +273,6 @@ figcaption {
   border-radius: 10px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
   margin-top: 10px;
-  width: 300px;
   height: 300px; 
   flex-wrap: wrap;
   display: flex;
@@ -317,6 +332,11 @@ figcaption a:hover {
 }
 
 /* Footer */
+
+footer {
+  position: relative;
+  bottom: -100px;
+}
 
 footer a img {
   width: 20px;
@@ -604,106 +624,12 @@ article ul.institucional {
 }
 
 
-
-/* MENU LOGIN */
-
-.todo { /* mover al lugar correcto */
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  min-width: 300px;
-}
-
-.contenedorLogin {
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-  width: auto; 
-  height: 100px;
-  background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  padding: 6px;
-}
-
-.usuarioLogin {  
-  background-color: rgba(18, 114, 105, 1);
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-  padding: 4px;
-}
-
-.usuarioLogin label {
-  color: rgba(191, 191, 191, 1);
-  margin-inline: 1px; /* Espacio entre el label y el input */
-}
-
-.contraseñaLogin {
-  background-color: rgba(18, 114, 105, 1);
-  border-radius: 5px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 0px;
-  padding: 4px;
-}
-.contraseñaLogin label {
-  color: rgba(191, 191, 191, 1);
-}
-
-.izquierda {
-  display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-}
-
-.usuarioCR {
-  display: flex;
-  justify-content: space-between;
-  margin-inline: 5%;
-}
-
-.izquierda a.login {
-  margin-top: 5px;
-  color: rgba(191, 191, 191, 1);
-  text-decoration: none;
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-.izquierda a:hover {
-  color: rgb(255, 152, 18);
-  transition: 0.5s;
-}
-
-.contraseñaLogin input {
-  margin-left: 10px;
-  width: 160px;
-  border-radius: 10px;
-  border: none;
-}
-
-.usuarioLogin input {
-  margin-left: 10px;
-  width: 300px;
-  border-radius: 10px;
-  border: none;
-}
-
-.contenedorAvatar {
-  display: flex;
-  margin-top: 10px;
-  background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  padding: 6px;
-}
- 
 /* FILTRO ALOJAMIENTOS */
+
+.contenedorFiltroAlojamientos {
+  position: relative;
+  top: 220px;
+}
 
 .filtroAlojamientos {
   display: flex;
