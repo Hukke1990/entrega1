@@ -246,11 +246,9 @@ article h2 {
   letter-spacing: 6px;
   color: rgba(191, 191, 191, 1);
   text-align: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  background-color: rgba(18, 114, 105, 1);
   width: 100%;
-  border-radius: 20px;
-  
+  border-bottom: 1px solid rgba(191, 191, 191, 1);
+  margin-top: 0px;  
 }
 
 figcaption {
@@ -704,41 +702,6 @@ article ul.institucional {
   border-radius: 10px;
   padding: 6px;
 }
-
-
-.avatar {
-  background-color: rgb(255, 152, 18);
-  padding: 5px;
-  border-radius: 30%;
-  height: 100px;
-  width: 100px;
-}
-
-.contenedorInfo {
-  margin: -10px auto;
-  margin-left: 5px;
-  color: rgba(191, 191, 191, 1);
-  font-weight: bold;
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-}
-
-.contenedorInfo p {
-  font-size: 12px;
-  margin-top: -20px;
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-
-}
-
-.contenedorInfo a.edicionUsuario {
-  color: rgba(191, 191, 191, 1);
-  text-decoration: none;
-  font-weight: bold;
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);  
-}
-
-.contenedorInfo a.edicionUsuario:hover {
-  color: rgb(255, 152, 18); 
-}
  
 /* FILTRO ALOJAMIENTOS */
 
@@ -769,7 +732,7 @@ article ul.institucional {
 }
 
 .filtroAlojamientos a {
-  margin: 3px;
+  margin: 5px;
   color: rgba(191, 191, 191, 1);
   margin-right: 10px;
   text-decoration: none;
