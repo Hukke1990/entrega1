@@ -148,6 +148,7 @@ nav.menuPrincipal {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  text-transform: capitalize;
 }
 
 .contenedorLoginNav {
@@ -327,7 +328,8 @@ figcaption a {
 }
 
 figcaption a:hover {
-  background-color: rgba(18, 114, 105, 1);
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 152, 18);
   transition: 0.5s;
 }
 
@@ -416,7 +418,8 @@ article label.contacto {
 }
 
 .botonEnviar:hover {
-  background-color: rgb(75, 89, 87, 1);
+  color: black;
+  background-color: rgb(255, 152, 18);
   transition: 0.5s;
 }
 
@@ -436,6 +439,8 @@ article label.contacto {
 .contacto textarea {
   border-radius: 10px;
   border: none;
+  width: 400px;
+  height: 200px;
 }
 
 /* PAGINA DE INFORMACIÓN INSTI */
