@@ -12,7 +12,7 @@ main {
   display: flex;
 }
 
-.todo { /* mover al lugar correcto */
+.todo {
   display: flex;
   flex-direction: column;
   max-width: 300px;
@@ -106,13 +106,13 @@ nav.menuPrincipal {
   color: rgba(191, 191, 191, 1);
   text-decoration: none;
 }
- /*
+
 .menuPrincipal .login {
   position: absolute;
   right: 0;
   margin-right: 20px;
 }
-*/
+
 .menuPrincipal .login:hover {
   background-color: rgb(255, 152, 18);
   border-radius: 10px;
@@ -135,14 +135,9 @@ nav.menuPrincipal {
   color: rgb(255, 152, 18);
 }
 
-.menuPrincipal .loginNav:hover {
-  background-color: rgba(191, 191, 191, 1);
-  border-radius: 5px;
-  padding: 5px;
-  color: rgb(0, 0, 0);
-}
 
 .loginNav {
+  box-sizing: border-box;
   color: rgba(191, 191, 191, 1);
   text-decoration: none;
   font-size: 16px;
@@ -151,7 +146,20 @@ nav.menuPrincipal {
   text-transform: capitalize;
 }
 
+.menuPrincipal .loginNav:hover {
+  background-color: rgba(191, 191, 191, 1);
+  border-radius: 5px;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+}
+
 .contenedorLoginNav {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+}
+
+.contenedorLoginNav:hover {
   position: absolute;
   right: 0;
   margin-right: 20px;
@@ -189,6 +197,7 @@ nav.menuPrincipal {
 .contenedorLoginNav-contenido button:hover {
   background-color: rgb(255, 152, 18);
   color: rgb(0, 0, 0);
+  transition: 0.5s;
 }
 
 .contenedorLoginNav-contenido a {
@@ -671,7 +680,9 @@ article ul.institucional {
 }
 
 .filtroAlojamientos a:hover{
-  color: rgb(255, 152, 18);
+  background-color: rgb(255, 152, 18);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
   transition: 0.5s;
 }
 
