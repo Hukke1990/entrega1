@@ -39,21 +39,30 @@
           <a class="menuPrincipal" href="informacionInsti.html">Sobre nosotros</a>
         </li>
         <div class="contenedorLoginNav">
-          <a class="loginNav">login</a>
-          <div class="contenedorLoginNav-contenido">
-            <input type="email" placeholder="email" />
-            <input type="password" placeholder="contraseña" />
+          <a href="#modal" class="loginNav">login</a>
+        </div>
+      </ul>
+      <div id="modal" class=" contenedorModal">
+        <div class="contenedorLoginNav-contenido">
+          <a href="#" class="cerrarModal">X</a>
+          <div class="contenedorImgUsuario">
+            <img class="avatar" src="imagenes/gaston.jpg" alt="avatar">
+            <h3>Nombre usuario</h3>
+          </div>
+          <input type="email" placeholder="email" />
+          <input type="password" placeholder="contraseña" />
+          <div class="btnModal">
             <button>conectarse</button>
             <button>registrarse</button>
           </div>
         </div>
-      </ul>
+      </div>
     </nav>
   </header>
 
   <main>
     <article>
-      <section class="todo">
+      <section class=" todo">
         <div class="contenedorFiltroAlojamientos">
           <div class="filtroAlojamientos">
             <a href="#"><img src="imagenes/menuFiltro/vistas_increibles.jpg" alt="" />vistas increibles
