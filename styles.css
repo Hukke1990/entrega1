@@ -184,7 +184,7 @@ nav.menuPrincipal {
 }
 
 /* HASTA ACA */
-
+ /*
 .contenedorModal .avatar {
   display: flex;
   border: 1px solid rgba(191, 191, 191, 1);
@@ -198,6 +198,19 @@ nav.menuPrincipal {
   width: 200px;
 }
 
+.contenedorLoginNav-contenido h3 {
+  position: absolute;
+  margin-top: 252px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 200px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
+}
+*/
 .contenedorLoginNav-contenido {
   display: flex;
   justify-content: center;
@@ -205,9 +218,10 @@ nav.menuPrincipal {
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgb(255, 255, 255));
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   border-radius: 20px;
-  height: 550px;
+  height: 500px;
   width: 400px;
   padding: 15px;
+  border: 1px solid rgba(191, 191, 191, 1);  
 }
 
 .btnModal {
@@ -243,28 +257,32 @@ nav.menuPrincipal {
   margin-top: 20px
 }
 
-.contenedorLoginNav-contenido h3 {
-  position: absolute;
-  margin-top: 252px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 200px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  background: rgba(0, 0, 0, .4);
-  text-align: center;
-}
-
 .contenedorModal .cerrarModal {
   position: relative;
-  margin-right: 10px;
-  display: flex;
-  justify-content: flex-end;
+  left: -10px;
+  bottom: 140px;
   color: rgb(255, 255, 255);
   font-size: 16px;
   cursor: pointer;
   text-decoration: none;
+}
+
+.contenedorH3-A {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorH3-A h3 {
+  position: relative;
+  top: -90px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: rgba(191, 191, 191, 1);
+  border-bottom: 1px solid rgba(191, 191, 191, 1);
+  width: 100%;
 }
 
 .contenedorModal .cerrarModal:hover {
@@ -272,15 +290,49 @@ nav.menuPrincipal {
 }
 
 .contenedorLoginNav-contenido input {
-  position: relative;
-  left: 25px;
-  height: 100px;
+  display: flex;
+  align-self: center;
+  height: 20px;
   width: 300px;
   margin: 5px;
   border-radius: 10px;
   border: none;
   padding: 10px;
   font-size: 16px;    
+}
+
+.contenedorR-F {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.contenedorR-F input {
+  position: relative;
+  top: 5px;
+  left: -20px;
+  width: 20px;
+  height: 20px;
+}
+
+.contenedorR-F p {
+  position: relative;
+  top: 5px;
+  left: -20px;
+  color: rgb(32, 32, 32);
+}
+
+.contenedorR-F a {
+  position: relative;
+  top: 5px;
+  left: 20px;
+  color: rgb(32, 32, 32);
+  text-decoration: none;
+}
+
+.contenedorR-F a:hover {
+  color: rgb(255, 152, 18);
+  transition: 0.5s;
 }
 
 /* CSS Imagenes y texto */
