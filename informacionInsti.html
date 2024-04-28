@@ -50,12 +50,6 @@
               <h3>bienvenido</h3>
               <a href="#" class="cerrarModal">X</a>
             </div>
-            <!--<div class="contenedorImgUsuario">
-              <img class="avatar" src="imagenes/gaston.jpg" alt="avatar">
-              <h3>Nombre usuario</h3>
-            </div> -->
-            <div>
-            </div>
             <input type="email" placeholder="email" />
             <input type="password" placeholder="contraseña" />
             <div class="contenedorR-F">
@@ -65,9 +59,30 @@
             </div>
             <div class="btnModal">
               <button>conectarse</button>
-              <button>registrarse</button>
+              <button href="#registro" id="btnRegistro">registrarse</button>
             </div>
           </div>
+
+          <!-- registro - queda solucionar , no hace el efecto target en el CSS y se cierra la ventana al hacer click -->
+          <div id="registro" class="contenedorModalRegistro">
+            <div class="registroUsuario">
+              <div class="contenedorRegistroU">
+                <div class="contenedorRU-H3-A">
+                  <h3>registrarse</h3>
+                  <a href="#" class="cerrarModal">X</a>
+                </div>
+                <input type="usuario" placeholder="usuario" />
+                <input type="email" placeholder="email" />
+                <input type="password" placeholder="contraseña" />
+                <input type="password" placeholder="repetir contraseña" />
+                <p>deacuerdo con los <a href="#">terminos y condiciones</a></p>
+                <button>registrarse</button>
+                <p>ya tenes cuenta? <a href="#">inicia sesion</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- termina codigo registro -->
+
         </div>
       </nav>
     </header>
@@ -77,35 +92,35 @@
         <section class="todo">
           <div class="contenedorFiltroAlojamientos">
             <div class="filtroAlojamientos">
-              <a href="#"><img src="imagenes/menuFiltro/vistas_increibles.jpg" alt="" />vistas increibles
+              <a href="#"><img src="imagenes/menuFiltro/vistas_increibles.jpg" alt="icon" />vistas increibles
               </a>
-              <a href="#"><img src="imagenes/menuFiltro/casas_campo.jpg" alt="" />casas
+              <a href="#"><img src="imagenes/menuFiltro/casas_campo.jpg" alt="icon" />casas
                 de campo</a>
-              <a href="#"><img src="imagenes/menuFiltro/castillos.jpg" alt="" />castillo</a>
-              <a href="#"><img src="imagenes/menuFiltro/destacados.jpg" alt="" />destacados</a>
-              <a href="#"><img src="imagenes/menuFiltro/golf.jpg" alt="" />golf</a>
-              <a href="#"><img src="imagenes/menuFiltro/cabanias.jpg" alt="" />cabañas</a>
-              <a href="#"><img src="imagenes/menuFiltro/mini_casas.jpg" alt="" />minicasas</a>
-              <a href="#"><img src="imagenes/menuFiltro/artico.jpg" alt="" />artico</a>
-              <a href="#"><img src="imagenes/menuFiltro/piletas_increibles.jpg" alt="" />piletas increibles</a>
-              <a href="#"><img src="imagenes/menuFiltro/frente_playa.jpg" alt="" />frente
+              <a href="#"><img src="imagenes/menuFiltro/castillos.jpg" alt="icon" />castillo</a>
+              <a href="#"><img src="imagenes/menuFiltro/destacados.jpg" alt="icon" />destacados</a>
+              <a href="#"><img src="imagenes/menuFiltro/golf.jpg" alt="icon" />golf</a>
+              <a href="#"><img src="imagenes/menuFiltro/cabanias.jpg" alt="icon" />cabañas</a>
+              <a href="#"><img src="imagenes/menuFiltro/mini_casas.jpg" alt="icon" />minicasas</a>
+              <a href="#"><img src="imagenes/menuFiltro/artico.jpg" alt="icon" />artico</a>
+              <a href="#"><img src="imagenes/menuFiltro/piletas_increibles.jpg" alt="icon" />piletas increibles</a>
+              <a href="#"><img src="imagenes/menuFiltro/frente_playa.jpg" alt="icon" />frente
                 a playas</a>
-              <a href="#"><img src="imagenes/menuFiltro/disenio.jpg" alt="" />diseño</a>
-              <a href="#"><img src="imagenes/menuFiltro/barcos.jpg" alt="" />barcos</a>
-              <a href="#"><img src="imagenes/menuFiltro/parques_nacionales.jpg" alt="" />parques nacionales</a>
-              <a href="#"><img src="imagenes/menuFiltro/cuevas.jpg" alt="" />cuevas</a>
-              <a href="#"><img src="imagenes/menuFiltro/esquies.jpg" alt="" />esquies</a>
-              <a href="#"><img src="imagenes/menuFiltro/en_el_lago.jpg" alt="" />en el
+              <a href="#"><img src="imagenes/menuFiltro/disenio.jpg" alt="icon" />diseño</a>
+              <a href="#"><img src="imagenes/menuFiltro/barcos.jpg" alt="icon" />barcos</a>
+              <a href="#"><img src="imagenes/menuFiltro/parques_nacionales.jpg" alt="icon" />parques nacionales</a>
+              <a href="#"><img src="imagenes/menuFiltro/cuevas.jpg" alt="icon" />cuevas</a>
+              <a href="#"><img src="imagenes/menuFiltro/esquies.jpg" alt="icon" />esquies</a>
+              <a href="#"><img src="imagenes/menuFiltro/en_el_lago.jpg" alt="icon" />en el
                 lago</a>
-              <a href="#"><img src="imagenes/menuFiltro/ecologicas.jpg" alt="" />ecologicas</a>
-              <a href="#"><img src="imagenes/menuFiltro/granjas.jpg" alt="" />granjas</a>
-              <a href="#"><img src="imagenes/menuFiltro/en_las_alturas.jpg" alt="" />en
+              <a href="#"><img src="imagenes/menuFiltro/ecologicas.jpg" alt="icon" />ecologicas</a>
+              <a href="#"><img src="imagenes/menuFiltro/granjas.jpg" alt="icon" />granjas</a>
+              <a href="#"><img src="imagenes/menuFiltro/en_las_alturas.jpg" alt="icon" />en
                 las alturas</a>
-              <a href="#"><img src="imagenes/menuFiltro/imprecionantes.jpg" alt="" />impresionantes!</a>
-              <a href="#"><img src="imagenes/menuFiltro/torres.jpg" alt="" />torres</a>
-              <a href="#"><img src="imagenes/menuFiltro/casas_arbol.jpg" alt="" />casas
+              <a href="#"><img src="imagenes/menuFiltro/imprecionantes.jpg" alt="icon" />impresionantes!</a>
+              <a href="#"><img src="imagenes/menuFiltro/torres.jpg" alt="icon" />torres</a>
+              <a href="#"><img src="imagenes/menuFiltro/casas_arbol.jpg" alt="icon" />casas
                 del arbol</a>
-              <a href="#"><img src="imagenes/menuFiltro/otros.jpg" alt="" />otros</a>
+              <a href="#"><img src="imagenes/menuFiltro/otros.jpg" alt="icon" />otros</a>
             </div>
           </div>
         </section>
@@ -152,8 +167,7 @@
             <div class="portada atras">
               <h3>Gaston Bordet</h3>
               <ul>
-                <strong>Edad: </strong>
-                34 años
+                <strong>Edad: </strong>34 años
               </ul>
               <ul>
                 <strong>Localidad: </strong>Concepcion del Uruguay
@@ -177,8 +191,7 @@
             <div class="portada atras">
               <h3>Marcelo Giles</h3>
               <ul>
-                <strong>Edad: </strong>
-                20 años
+                <strong>Edad: </strong>20 años
               </ul>
               <ul>
                 <strong>Localidad: </strong>Concordia
@@ -203,8 +216,7 @@
             <div class="portada atras">
               <h3>Ludmila Armua</h3>
               <ul>
-                <strong>Edad: </strong>
-                23 años
+                <strong>Edad: </strong>23 años
               </ul>
               <ul>
                 <strong>Localidad: </strong>Concordia
@@ -267,9 +279,10 @@
     </main>
 
     <footer>
-      <a href="#" class="Facebook"><img src="imagenes/facebook.png" alt="" /></a>
-      <a href="http://Instagram.com/HospedaSphere" class="Instagram"><img src="imagenes/instagram.png" alt="" /></a>
-      <a href="#" class="Twitter"><img src="imagenes/x.png" alt="" /></a>
+      <a href="#" class="Facebook"><img src="imagenes/facebook.png" alt="facebook icon" /></a>
+      <a href="http://Instagram.com/HospedaSphere" class="Instagram"><img src="imagenes/instagram.png"
+          alt="instagram icon" /></a>
+      <a href="#" class="Twitter"><img src="imagenes/x.png" alt="x icon" /></a>
       <p class="derechos">
         &copy; 2024 HospedaSphere. Todos los derechos reservados.
       </p>

@@ -221,7 +221,7 @@ nav.menuPrincipal {
   height: 500px;
   width: 400px;
   padding: 15px;
-  border: 1px solid rgba(191, 191, 191, 1);  
+  border: 2px solid rgb(255, 255, 255);  
 }
 
 .btnModal {
@@ -334,6 +334,119 @@ nav.menuPrincipal {
   color: rgb(255, 152, 18);
   transition: 0.5s;
 }
+
+/* REGISTRO USUARIO - revisar efecto target -
+modificar display: none a display: flex
+para visualizar el menu registro */
+
+.contenedorModalRegistro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.contenedorModalRegistro:target {
+  display: flex;
+}
+
+.registroUsuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 420px;
+  height: 530px;
+  line-height: 45px;
+  background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgb(255, 255, 255));
+  border-radius: 20px;
+}
+
+.contenedorRU-H3-A {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedorRU-H3-A h3 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: rgba(191, 191, 191, 1);
+  border-bottom: 1px solid rgba(191, 191, 191, 1);
+  width: 370px;
+}
+
+.contenedorRU-H3-A a {
+  position: relative;
+  top: -50px;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: rgba(191, 191, 191, 1);
+}
+
+.contenedorRegistroU {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px  
+}
+
+.contenedorRegistroU input {
+  position: relative;
+  display: flex;
+  align-self: center;
+  height: 20px;
+  width: 300px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  font-size: 16px;    
+}
+
+.contenedorRegistroU button {
+  color: rgba(191, 191, 191, 1);
+  font-size: 16px;
+  background-color: rgba(18, 114, 105, 1);
+  border-radius: 10px;
+  border: none;
+  margin-inline: 20px;
+  padding: 10px;
+}
+
+.contenedorRegistroU button:hover {
+  background-color: rgb(255, 152, 18);
+  border-radius: 10px;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.contenedorRegistroU a {
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+}
+
+.contenedorRegistroU a:hover {
+  color: rgb(255, 152, 18);
+}
+
+.contenedorRegistroU p {
+  color: rgb(29, 29, 29);
+}
+
+/* FINALIZA REGISTRO - revisar efecto target */
+
+
 
 /* CSS Imagenes y texto */
 
