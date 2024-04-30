@@ -642,8 +642,8 @@ figcaption a:hover {
 }
 
 .tarjetaAlojamientos .atras {
-  transform: perspective(600px) rotateY(0deg);
-  background: rgb(3, 44, 54);
+  transform: perspective(600px) rotateY(180deg);
+  background: rgba(75, 89, 87, 1);
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -679,7 +679,7 @@ figcaption a:hover {
 
 .atras ul li{
   position: relative;
-  top: -60px;
+  top: -20px;
   list-style: none;
   cursor: pointer;
   white-space: nowrap;
@@ -690,6 +690,23 @@ figcaption a:hover {
   width: 20px;
   height: 20px;
   margin-inline: 10px;
+}
+
+.atras .leerMas a {
+  position: relative;
+  top: -10px;
+  background-color: rgba(15, 63, 58, 1);
+  border-radius: 10px;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 5px 10px #000;
+}
+
+.atras .leerMas a:hover {
+  background-color: rgb(255, 152, 18);
+  color: #000000;
+  transition: 0.5s;
 }
 
 .tarjetaAlojamientos:hover .adelante {
