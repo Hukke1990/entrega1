@@ -10,6 +10,10 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .todo {
@@ -456,7 +460,7 @@ para visualizar el menu registro */
 
 article.medio {
   position: relative;
-  top: 160px;
+  top: -674px;
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   padding: 10px;
   border-radius: 10px;
@@ -882,6 +886,18 @@ article ul.institucional {
 
 /* FILTRO ALOJAMIENTOS */
 
+.menuIzquierda {
+  display: flex;
+}
+
+.menuIzquierda ul li {
+  position: relative;
+  left: -40px;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
 .contenedorFiltroAlojamientos {
   position: relative;
   top: 160px;
@@ -899,20 +915,6 @@ article ul.institucional {
   border-radius: 10px;
 }
 
-.filtroAlojamientos h2 {
-  background-color: rgba(18, 114, 105, 1);
-  border-radius: 20px;
-  padding-inline: 10px;
-  width: 200px;
-  margin: 10px auto;
-  text-align: center;
-  color: rgba(191, 191, 191, 1);
-  font-weight: bold;
-  font-size: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-}
-
 .filtroAlojamientos a {
   margin: 5px;
   color: rgba(191, 191, 191, 1);
@@ -925,6 +927,7 @@ article ul.institucional {
   background-color: rgb(255, 152, 18);
   border-radius: 10px;
   color: rgb(0, 0, 0);
+  padding: 5px;
   transition: 0.5s;
 }
 
