@@ -11,7 +11,6 @@ body {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 
@@ -23,7 +22,7 @@ header {
   position: fixed; /* Posicionar el encabezado en la parte superior */
   width: 100%;
   top: 0px; /* Ancho del encabezado */
-  z-index: 1; /* Colocar el encabezado por encima de otros elementos */
+  z-index: 999; /* Colocar el encabezado por encima de otros elementos */
 }
 
 .contenedor {
@@ -85,9 +84,6 @@ nav.menuPrincipal {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   display: flex;
-  /*width: 60%;
-  max-width: 1000px;
-  margin: 10px auto; */
 }
 
 .menuPrincipal ul {
@@ -452,14 +448,14 @@ article.medio {
   position: relative;
   display: flex;
   flex-direction: column;
-  top: 220px;
+  top: -420px;
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  margin: 10px 8% 100px; 
+  margin: 10px 100px; 
   max-width: 1000px;
-  width: 60%;
+  width: 1000px;
   align-self: flex-start;
 }
 
@@ -686,8 +682,8 @@ article label.contacto {
 .contacto textarea {
   border-radius: 10px;
   border: none;
-  width: 400px;
-  height: 200px;
+  width: 300px;
+  height: 400px;
 }
 
 /* PAGINA DE INFORMACIÓN INSTI */
@@ -879,24 +875,15 @@ article ul.institucional {
 /* FILTRO ALOJAMIENTOS */
 
 
-.todo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 10px;
-  display: flex;
-  max-width: auto;
-  z-index: 1;
-}
-
 .contenedorFiltroAlojamientos {
   position: relative;
-  top: 220px;
+  left: 10px;
+  top: 230px;
 }
 
 .filtroAlojamientos ul li {
   display: flex;
-
+  width: auto;
 }
 
 .filtroAlojamientos {
@@ -907,6 +894,7 @@ article ul.institucional {
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
+  
 }
 
 .filtroAlojamientos ul {
@@ -915,7 +903,6 @@ article ul.institucional {
   display: flex;
   flex-direction: column;
   margin: 10px;
-
 }
 
 .filtroAlojamientos ul li img {
@@ -924,16 +911,17 @@ article ul.institucional {
   width: 20px;
   height: 20px;
   margin-right: 10px;
-  filter: grayscale(100%) invert(100%); /* Establece la imagen en blanco */
+  filter: grayscale(100%) invert(100%);
 }
 
 .filtroAlojamientos ul li a {
   text-decoration: none;
+  z-index: 100;
 }
 
 .filtroAlojamientos ul li span {
   display: none;
-  color: rgba(191, 191, 191, 1);
+  color: rgba(191, 191, 191, 1);  
 }
 
 .filtroAlojamientos a:hover {
@@ -942,15 +930,16 @@ article ul.institucional {
   padding: 2px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   transition: 0.5s;
+  white-space: nowrap;
 }
 
 .filtroAlojamientos ul li:hover span {
   color: rgb(0, 0, 0);
-  display: inline;
+  display: inline;  
 }
 
 .filtroAlojamientos ul li:hover img {
-  filter: grayscale(0%) invert(0%); /* Establece la imagen en negro */
+  filter: grayscale(0%) invert(0%); 
 }
 
 
