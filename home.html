@@ -15,74 +15,71 @@
 <body>
   <header>
     <div class="contenedor">
-      <div class="imagenLogo">
+      <div class="HospedaSphere">
+        <h1>Hospeda</h1>
         <img class="logo" src="imagenes/logo.png" alt="Logo de una casa con personas pronto a ingresar" width="100px"
           height="100px" />
+        <h1>Sphere</h1>
       </div>
     </div>
-    <div class="contenedor">
-      <div class="HospedaSphere">
-        <h1>HospedaSphere</h1>
-        <h1></h1>
-        <p>Descubre el mundo, encuentra tu espacio!</p>
-      </div>
-    </div>
-    <nav class="menuPrincipal">
-      <ul>
-        <li>
-          <a class="menuPrincipal" href="home.html">Home</a>
-        </li>
-        <li>
-          <a class="menuPrincipal" href="informacionContacto.html">Contacto</a>
-        </li>
-        <li>
-          <a class="menuPrincipal" href="informacionInsti.html">Sobre nosotros</a>
-        </li>
-        <div class="contenedorLoginNav">
-          <a href="#modal" class="loginNav">login</a>
-        </div>
-      </ul>
-      <div id="modal" class=" contenedorModal">
-        <div class="contenedorLoginNav-contenido adelante">
-          <div class="contenedorH3-A">
-            <h3>bienvenido</h3>
-            <a href="#" class="cerrarModal">X</a>
+    <div class="contenedorNavPrincipal">
+      <nav class="menuPrincipal">
+        <ul>
+          <li>
+            <a class="menuPrincipal" href="home.html">Home</a>
+          </li>
+          <li>
+            <a class="menuPrincipal" href="informacionContacto.html">Contacto</a>
+          </li>
+          <li>
+            <a class="menuPrincipal" href="informacionInsti.html">Sobre nosotros</a>
+          </li>
+          <div class="contenedorLoginNav">
+            <a href="#modal" class="loginNav">login</a>
           </div>
-          <input type="email" placeholder="email" />
-          <input type="password" placeholder="contraseña" />
-          <div class="contenedorR-F">
-            <input type="checkbox" name="recordar usuario" id="r-usuario">
-            <p>recordar usuario</p>
-            <a href="#">olvide mi contraseña</a>
-          </div>
-          <div class="btnModal">
-            <button>conectarse</button>
-            <button href="#registro" id="btnRegistro">registrarse</button>
-          </div>
-        </div>
-
-        <!-- registro - queda solucionar , no hace el efecto target en el CSS y se cierra la ventana al hacer click -->
-        <div id="registro" class="contenedorModalRegistro atras">
-          <div class="registroUsuario">
-            <div class="contenedorRegistroU">
-              <div class="contenedorRU-H3-A">
-                <h3>registrarse</h3>
-                <a href="#" class="cerrarModal">X</a>
-              </div>
-              <input type="usuario" placeholder="usuario" />
-              <input type="email" placeholder="email" />
-              <input type="password" placeholder="contraseña" />
-              <input type="password" placeholder="repetir contraseña" />
-              <p>deacuerdo con los <a href="#">terminos y condiciones</a></p>
-              <button>registrarse</button>
-              <p>ya tenes cuenta? <a href="#">inicia sesion</a></p>
+        </ul>
+        <div id="modal" class=" contenedorModal">
+          <div class="contenedorLoginNav-contenido adelante">
+            <div class="contenedorH3-A">
+              <h3>bienvenido</h3>
+              <a href="#" class="cerrarModal">X</a>
+            </div>
+            <input type="email" placeholder="email" />
+            <input type="password" placeholder="contraseña" />
+            <div class="contenedorR-F">
+              <input type="checkbox" name="recordar usuario" id="r-usuario">
+              <p>recordar usuario</p>
+              <a href="#">olvide mi contraseña</a>
+            </div>
+            <div class="btnModal">
+              <button>conectarse</button>
+              <button href="#registro" id="btnRegistro">registrarse</button>
             </div>
           </div>
-        </div>
-        <!-- termina codigo registro -->
 
-      </div>
-    </nav>
+          <!-- registro - queda solucionar , no hace el efecto target en el CSS y se cierra la ventana al hacer click -->
+          <div id="registro" class="contenedorModalRegistro atras">
+            <div class="registroUsuario">
+              <div class="contenedorRegistroU">
+                <div class="contenedorRU-H3-A">
+                  <h3>registrarse</h3>
+                  <a href="#" class="cerrarModal">X</a>
+                </div>
+                <input type="usuario" placeholder="usuario" />
+                <input type="email" placeholder="email" />
+                <input type="password" placeholder="contraseña" />
+                <input type="password" placeholder="repetir contraseña" />
+                <p>deacuerdo con los <a href="#">terminos y condiciones</a></p>
+                <button>registrarse</button>
+                <p>ya tenes cuenta? <a href="#">inicia sesion</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- termina codigo registro -->
+
+        </div>
+      </nav>
+    </div>
   </header>
   <nav class="menuIzquierda">
     <div class="contenedorFiltroAlojamientos">
