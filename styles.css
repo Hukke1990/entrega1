@@ -453,7 +453,7 @@ article.medio {
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  margin: 10px 8% 100px; 
+  margin: 10px  100px; 
   max-width: 1000px;
   width: 60%;
   align-self: flex-start;
@@ -874,15 +874,15 @@ article ul.institucional {
 
 /* FILTRO ALOJAMIENTOS */
 
+
 .todo {
   display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  min-width: 300px;
+  max-width: auto;
 }
 
-.filtroAlojamientos li {
-  list-style: none;
+.filtroAlojamientos ul li {
+  display: flex;
+  align-items: center; 
 }
 
 .contenedorFiltroAlojamientos {
@@ -892,56 +892,43 @@ article ul.institucional {
 
 .filtroAlojamientos {
   display: flex;
-  flex-direction: column;
-  right: 10px;
+  width: auto;
   margin-top: 10px;
   margin-left: 10px;
-  height: auto;
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
-.filtroAlojamientos h2 {
-  background-color: rgba(18, 114, 105, 1);
-  border-radius: 20px;
-  padding-inline: 10px;
-  width: 200px;
-  margin: 10px auto;
-  text-align: center;
-  color: rgba(191, 191, 191, 1);
-  font-weight: bold;
-  font-size: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+.filtroAlojamientos ul {
+  position: relative;
+  left: -30px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
-.filtroAlojamientos a {
-  margin: 5px;
-  color: rgba(191, 191, 191, 1);
-  margin-right: 10px;
-  text-decoration: none;
-  
-}
-
-.filtroAlojamientos a:hover{
-  background-color: rgb(255, 152, 18);
-  border-radius: 10px;
-  color: rgb(0, 0, 0);
-  transition: 0.5s;
-}
-
-.filtroAlojamientos img {
-  filter: brightness(1) invert(1);
-  margin: -5px 10px;
+.filtroAlojamientos ul li img {
   width: 20px;
   height: 20px;
+  margin-right: 10px;
 }
 
-.filtroAlojamientos a:hover img {
-  filter: brightness(1) invert(0) sepia(1) saturate(5) hue-rotate(30deg); /* REVISAR */
-  transition: 0.5s; 
+.filtroAlojamientos ul li a {
+  text-decoration: none;
 }
+
+.filtroAlojamientos ul li span {
+  display: inline;
+  color: rgba(191, 191, 191, 1);
+}
+
+.filtroAlojamientos ul li:hover span {
+  display: inline;
+}
+
+
+
 
 
 
