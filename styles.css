@@ -10,6 +10,10 @@ body {
 
 main {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
 }
 
 .todo {
@@ -25,8 +29,9 @@ header {
   background: rgba(191, 191, 191, 1);
   position: fixed; /* Posicionar el encabezado en la parte superior */
   width: 100%;
+  height: 150px;
   top: 0px; /* Ancho del encabezado */
-  z-index: 1; /* Colocar el encabezado por encima de otros elementos */
+  z-index: 999; /* Colocar el encabezado por encima de otros elementos */
 }
 
 .contenedor {
@@ -35,8 +40,12 @@ header {
 }
 
 div.HospedaSphere {
+  position: relative;
+  top: 40px;
+  display: flex;
+  align-items: center;
   background-color: rgba(15, 63, 58, 1); /* Color de fondo */
-  padding: 20px; /* Espaciado interno para el contenido */
+  padding: 10px;
   border-radius: 10px; /* Redondear los bordes */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Sombra */
   height: 25px; /* Alto del div */
@@ -44,14 +53,15 @@ div.HospedaSphere {
 
 div.HospedaSphere h1 {
   position: relative;
-  top:-18px;
-  color:  rgba(191, 191, 191, 1);
+  top:-10px;
   max-width: 100%; /* Ancho máximo del h1 */
   width: auto; /* Ocupar el 100% del ancho disponible */
   text-align: center; /* Centrar el texto */
   line-height: 0; /* Ajustar el interlineado */
   margin-bottom: 1%; /* Espaciado inferior */
   letter-spacing: 5px; /* Espacio entre letras */
+  color: rgba(191, 191, 191, 1);
+
 }
 
 div.HospedaSphere p {
@@ -60,25 +70,25 @@ div.HospedaSphere p {
   color: rgba(191, 191, 191, 1);
 }
 
-div.imagenLogo {
-  display: flex; /* Usar flexbox para centrar */
-  justify-content: center; /* Centrar horizontalmente */
-  align-items: center; /* Centrar verticalmente */
-  width: 110px; /* Ancho del logo */
-  height: 110px; /* Alto del logo */
-  background-color: rgba(15, 63, 58, 1); /* Color de fondo */
-  border-radius: 100%; /* Redondear el logo */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Sombra */
-}
-
-
 img.logo {
-    display: block;
-    margin: 0 auto;
+  background-color: rgba(15, 63, 58, 1); /* Color de fondo */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6); /* Sombra */
+
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 /* CSS Menu Principal  */
 
+
+.contenedorNavPrincipal {
+  position: relative;
+  top: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 nav.menuPrincipal {
   background-color: rgb(15, 63, 58, 1);
@@ -88,9 +98,6 @@ nav.menuPrincipal {
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   display: flex;
-  /*width: 60%;
-  max-width: 1000px;
-  margin: 10px auto; */
 }
 
 .menuPrincipal ul {
@@ -223,6 +230,7 @@ nav.menuPrincipal {
   padding: 15px;
   border: 2px solid rgb(255, 255, 255);  
 }
+
 
 .btnModal {
   display: flex;
@@ -452,7 +460,7 @@ para visualizar el menu registro */
 
 article.medio {
   position: relative;
-  top: 220px;
+  top: -674px;
   background: linear-gradient(to bottom, rgba(15, 63, 58, 1), rgba(18, 114, 105, 1));
   padding: 10px;
   border-radius: 10px;
@@ -531,12 +539,12 @@ figcaption {
 
 figcaption h3 {
   flex-direction: column;
-  font-size: 25px;
+  font-size: 16px;
   color: rgba(18, 114, 105, 1);
   text-align: center;
   margin-bottom: 10px;
   position: relative;
-  top: -30px;
+  top: -20px;
   font-style: italic;
   text-transform: capitalize;
 }
@@ -878,9 +886,21 @@ article ul.institucional {
 
 /* FILTRO ALOJAMIENTOS */
 
+.menuIzquierda {
+  display: flex;
+}
+
+.menuIzquierda ul li {
+  position: relative;
+  left: -40px;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
 .contenedorFiltroAlojamientos {
   position: relative;
-  top: 220px;
+  top: 160px;
 }
 
 .filtroAlojamientos {
@@ -895,20 +915,6 @@ article ul.institucional {
   border-radius: 10px;
 }
 
-.filtroAlojamientos h2 {
-  background-color: rgba(18, 114, 105, 1);
-  border-radius: 20px;
-  padding-inline: 10px;
-  width: 200px;
-  margin: 10px auto;
-  text-align: center;
-  color: rgba(191, 191, 191, 1);
-  font-weight: bold;
-  font-size: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
-}
-
 .filtroAlojamientos a {
   margin: 5px;
   color: rgba(191, 191, 191, 1);
@@ -919,8 +925,10 @@ article ul.institucional {
 
 .filtroAlojamientos a:hover{
   background-color: rgb(255, 152, 18);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
   color: rgb(0, 0, 0);
+  padding: 5px;
   transition: 0.5s;
 }
 
