@@ -12,12 +12,7 @@ main {
   display: flex;
 }
 
-.todo {
-  display: flex;
-  flex-direction: column;
-  max-width: 300px;
-  min-width: 300px;
-}
+
 
 /* CSS Header */
 
@@ -878,6 +873,17 @@ article ul.institucional {
 
 
 /* FILTRO ALOJAMIENTOS */
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 300px;
+}
+
+.filtroAlojamientos li {
+  list-style: none;
+}
 
 .contenedorFiltroAlojamientos {
   position: relative;
