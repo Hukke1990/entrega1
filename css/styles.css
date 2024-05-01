@@ -588,6 +588,132 @@ figcaption a:hover {
   transition: 0.5s;
 }
 
+/* CONTENEDOR IMAGENES PRINCIPAL */
+
+
+.tarjetaAlojamientos {
+  position: relative;
+  width: 250px;
+  height: 350px;
+}
+
+.tarjetaAlojamientos .impresionantes! {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s
+}
+
+.tarjetaAlojamientos .adelante {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+
+.tarjetaAlojamientos .adelante img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tarjetaAlojamientos .adelante h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, .4);
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-transform: capitalize;
+
+}
+
+.tarjetaAlojamientos .atras {
+  transform: perspective(600px) rotateY(180deg);
+  background: rgba(75, 89, 87, 1);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center; 
+  box-shadow: 0 5px 10px #000;
+}
+
+.tarjetaAlojamientos .atras .link {
+  border-top: 1px solid rgb(241, 241, 241);
+  height: 50px;
+  line-height: 50px;
+}
+
+.tarjetaAlojamientos .atras h3 {
+  white-space: nowrap;
+  font-size: 20px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+  border-bottom: 1px solid rgb(241, 241, 241);
+  height: 50px;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+
+.tarjetaAlojamientos .atras ul {
+  letter-spacing: 1px;
+  margin: 5px;
+  margin-left: -40px;
+  margin-bottom: 10px;
+
+}
+
+.atras ul li{
+  position: relative;
+  top: -20px;
+  list-style: none;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.atras ul li img {
+  filter: brightness(1) invert(1);
+  width: 20px;
+  height: 20px;
+  margin-inline: 10px;
+}
+
+.atras .leerMas a {
+  position: relative;
+  top: -10px;
+  background-color: rgba(15, 63, 58, 1);
+  border-radius: 10px;
+  padding: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 5px 10px #000;
+}
+
+.atras .leerMas a:hover {
+  background-color: rgb(255, 152, 18);
+  color: #000000;
+  transition: 0.5s;
+}
+
+.tarjetaAlojamientos:hover .adelante {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.tarjetaAlojamientos:hover .atras {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+
+/* HASTA ACA */
+
 /* Footer */
 
 footer {
