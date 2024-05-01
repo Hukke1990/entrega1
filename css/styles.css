@@ -590,6 +590,10 @@ figcaption a:hover {
 
 /* CONTENEDOR IMAGENES PRINCIPAL */
 
+.contenedorMedio {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .tarjetaAlojamientos {
   position: relative;
@@ -637,7 +641,7 @@ figcaption a:hover {
 
 .tarjetaAlojamientos .atras {
   transform: perspective(600px) rotateY(180deg);
-  background: rgba(75, 89, 87, 1);
+  background: rgb(255, 152, 18);
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -672,6 +676,8 @@ figcaption a:hover {
 }
 
 .atras ul li{
+  display: flex;
+  align-items: center;
   position: relative;
   top: -20px;
   list-style: none;
