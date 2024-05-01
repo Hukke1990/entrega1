@@ -614,6 +614,7 @@ figcaption a:hover {
 .tarjetaAlojamientos .adelante {
   transform: perspective(600px) rotateY(0deg);
   box-shadow: 0 5px 10px #000;
+  border: 2px solid rgb(255, 255, 254);
 }
 
 .tarjetaAlojamientos .adelante img {
@@ -625,12 +626,12 @@ figcaption a:hover {
 
 .tarjetaAlojamientos .adelante h3 {
   position: absolute;
-  bottom: 0;
+  top: 280px;
   width: 100%;
-  height: 45px;
+  height: 50px;
   line-height: 45px;
   color: #fff;
-  background: rgba(0, 0, 0, .4);
+  background: rgba(0, 0, 0, .5);
   text-align: center;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -692,22 +693,26 @@ figcaption a:hover {
   margin-inline: 10px;
 }
 
+.atras .leerMas {
+  border-top: 2px solid rgb(241, 241, 241);
+  height: 50px;
+  line-height: 50px;
+  position: relative;
+}
+
 .atras .leerMas a {
   position: relative;
-  top: -10px;
-  background-color: rgba(15, 63, 58, 1);
-  border-radius: 10px;
   padding: 5px;
   color: #ffffff;
   text-decoration: none;
-  box-shadow: 0 5px 10px #000;
 }
 
 .atras .leerMas a:hover {
-  background-color: rgb(255, 152, 18);
-  color: #000000;
+  border-radius: 10px;
+  border: 1px solid rgb(241, 241, 241);
   transition: 0.5s;
 }
+        
 
 .tarjetaAlojamientos:hover .adelante {
   transform: perspective(600px) rotateY(180deg);
