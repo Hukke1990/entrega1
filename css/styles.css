@@ -597,14 +597,14 @@ figcaption a:hover {
   height: 350px;
 }
 
-.tarjetaAlojamientos .impresionantes! {
+.tarjetaAlojamientos .adelante, .atras {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: .5s
+  transition: .5s;
 }
 
 .tarjetaAlojamientos .adelante {
