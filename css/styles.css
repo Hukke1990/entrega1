@@ -1,5 +1,7 @@
 body {
-  background: rgba(191, 191, 191, 1);
+  display: flex;
+  flex-direction: column;
+  background: rgb(10, 10, 10);
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -12,7 +14,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh; /* Ajusta la altura mínima del main al 100% del viewport height */
   width: 100vw;
 }
 
@@ -26,7 +28,7 @@ main {
 /* CSS Header */
 
 header {
-  background: rgba(191, 191, 191, 1);
+  background: rgb(191, 191, 191);
   position: fixed; /* Posicionar el encabezado en la parte superior */
   width: 100%;
   height: 150px;
@@ -728,8 +730,9 @@ figcaption a:hover {
 /* Footer */
 
 footer {
-  position: relative;
-  bottom: -100px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
 }
 
 footer a img {
