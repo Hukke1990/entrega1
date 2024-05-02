@@ -776,6 +776,38 @@ article div.contacto {
   justify-content: center;
 }
 
+article fieldset.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.158);
+}
+
+fieldset legend.contacto {
+  color: rgba(191, 191, 191, 1);
+}
+
+fieldset .completar {
+  display: flex;
+  flex-direction: column;
+}
+
+.terminos span {
+  color: rgba(191, 191, 191, 1);
+}
+
+a.terminos{
+  color: rgba(191, 191, 191, 1);
+  text-decoration: none;
+}
+
+a.terminos:hover {
+  color: rgb(255, 152, 18);
+}
+
 article h3.contacto {
   color: rgba(191, 191, 191, 1);
   font-size: 25px;

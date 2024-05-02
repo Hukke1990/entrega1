@@ -180,24 +180,30 @@
           recuerde que nuestro horario de atencion es de Lun a Vie de 9 a 18
           hs.
         </p>
-
-        <label class="contacto" for="nombre">Nombre Completo:</label>
-        <input type="text" name="usuario" id="usuario" />
-        <label class="contacto" for="email">Correo Electrónico:</label>
-        <input type="email" name="email" id="email" />
-        <label class="contacto" for="telefono">Teléfono:</label>
-        <input type="tel" name="tel" id="telefono" />
-        <label class="contacto" for="consulta">Consulta:</label>
-        <textarea id="consulta" name="consulta" rows="5" required></textarea>
-        <label class="contacto" for="preferencia">Preferencia de Contacto:</label>
-        <select class="preferencia" name="preferencia">
-          <option value="email">Correo Electrónico</option>
-          <option value="telefono">Teléfono</option>
-        </select>
-        <label class="contacto" for="privacidad">
+        <fieldset class="contacto">
+          <legend class="contacto">Contactenos</legend>
+          <div class="completar">
+            <label class="contacto" for="usuario">Nombre completo:</label>
+            <input type="text" name="usuario" id="usuario" />
+            <label class="contacto" for="email">Correo Electrónico:</label>
+            <input type="email" name="email" id="email" />
+            <label class="contacto" for="telefono">Teléfono:</label>
+            <input type="tel" name="tel" id="telefono" />
+            <label class="contacto" for="consulta">Consulta:</label>
+            <textarea id="consulta" name="consulta" rows="5" required></textarea>
+            <label class="contacto" for="preferencia">Preferencia de Contacto:</label>
+            <select class="preferencia" name="preferencia">
+              <option value="email">Correo Electrónico</option>
+              <option value="telefono">Teléfono</option>
+            </select>
+            <label class="contacto" for="privacidad">
+          </div>
+        </fieldset>
+        <div class="terminos">
           <input type="checkbox" id="privacidad" name="privacidad" required />
-          Acepto los términos de privacidad.
-        </label>
+          <span>Acepto los</span> <a class="terminos" href="#">términos de privacidad.</a>
+          </label>
+        </div>
         <button class="botonEnviar" type="submit">Enviar Consulta</button>
       </div>
     </article>
