@@ -11,10 +11,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: calc(100vh - 100px); /* Resta el tamaño del footer al mínimo de altura del main */
-  width: 100vw;
-  margin-bottom: -700px; /* Resta el tamaño del footer para compensar el espacio */
-
+  min-height: calc(100vh - 100px); 
+  margin-bottom: -700px;
 }
 
 
@@ -727,10 +725,6 @@ figcaption a:hover {
 /* HASTA ACA */
 
 /* Footer */
-
-footer {
-  bottom: calc(-100px + 100vh - 100%); /* Ajusta la posición del footer */
-}
 
 footer a img {
   width: 20px;
